@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--  transparent color  -->
+    <color name="color_transparent">#00FFFFFF</color>
+    <color name="color_transparent_25">#40FFFFFF</color>
+    <color name="color_transparent_50">#80FFFFFF</color>
+
+
+    <!--  white color  -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_white_50">#80FFFFFF</color>
+    <color name="color_white_75">#BFFFFFFF</color>
+    <color name="color_white_2_F1F3F8">#F1F3F8</color>
+    <color name="color_white_3_F3F5F9">#F3F5F9</color>
+
+
+    <!--  black color  -->
+    <color name="color_black">#000000</color>
+    <color name="color_black_2_042B3A">#042B3A</color>
+    <color name="color_black_50">#80000000</color>
+    <color name="color_black_75">#BF000000</color>
+
+
+    <!--  ash color  -->
+    <color name="color_ash_1_D2D7E9">#D2D7E9</color>
+    <color name="color_ash_2_E3E6EB">#E3E6EB</color>
+    <color name="color_ash_3_DDE2EB">#DDE2EB</color>
+    <color name="color_ash_4_CCE3E6EB">#CCE3E6EB</color>
+    <color name="color_ash_5_2D4854">#2D4854</color>
+    <color name="color_ash_5_2D4854_20">#332D4854</color>
+    <color name="color_ash_6_858E99">#858E99</color>
+
+
+    <!--  red color  -->
+    <color name="color_red_1_FF4B3A">#FF4B3A</color>
+    <color name="color_red_1_FF4B3A_70">#B3FF4B3A</color>
+
+
+    <!--  yellow_orange color  -->
+    <color name="color_yellow_orange_F3AE3D">#F3AE3D</color>
+    <color name="color_yellow_orange_F3AE3D_20">#33F3AE3D</color>
+
+
+    <!--  green color  -->
+    <color name="color_green_1_00BC90">#00BC90</color>
+
+
+    <!--  teal color  -->
+    <color name="color_teal_1_E9F2EF">#E9F2EF</color>
+    <color name="color_teal_2_BBD1C6">#BBD1C6</color>
+    <color name="color_teal_3_03DAC5">#03DAC5</color>
+    <color name="color_teal_4_018786">#018786</color>
+    <color name="color_teal_5_0490A1">#0490A1</color>
+    <color name="color_teal_5_0490A1_50">#800490A1</color>
+    <color name="color_teal_5_0490A1_70">#B30490A1</color>
+    <color name="color_teal_6_0C6975">#0C6975</color>
+
+
+    <!--  blue grey color  -->
+    <color name="color_blue_grey_1_046F7C">#046F7C</color>
+    <color name="color_blue_grey_2_263F4A">#263F4A</color>
+    <color name="color_blue_grey_3_0A3142">#0A3142</color>
+    <color name="color_blue_grey_3_0A3142_60">#990A3142</color>
+    <color name="color_blue_grey_3_0A3142_80">#CC0A3142</color>
+
+</resources>
