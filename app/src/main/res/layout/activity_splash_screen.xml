@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/color_white"
-        tools:context=".SplashScreenActivity">
+        tools:context=".splash.SplashScreenActivity">
 
         <TextView
             style="@style/TextAppearance.MaterialComponents.Headline4"

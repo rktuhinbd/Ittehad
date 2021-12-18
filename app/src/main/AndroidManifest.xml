@@ -29,7 +29,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rabeta">
         <activity
-            android:name="com.madaninagar.madani.SplashScreenActivity"
+            android:name="com.madaninagar.madani.splash.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

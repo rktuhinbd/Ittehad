@@ -1,7 +1,8 @@
-package com.madaninagar.madani
+package com.madaninagar.madani.splash
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.madaninagar.madani.R
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
