@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.rktuhinbd.madani">
+    package="com.madaninagar.madani">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -29,7 +29,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rabeta">
         <activity
-            android:name="com.rktuhinbd.madani.SplashScreenActivity"
+            android:name="com.madaninagar.madani.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +40,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.rktuhinbd.madani.android.fileprovider"
+            android:authorities="com.madaninagar.madani.android.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

@@ -1,4 +1,4 @@
-package com.rktuhinbd.madani
+package com.madaninagar.madani
 
 import org.junit.Test
 

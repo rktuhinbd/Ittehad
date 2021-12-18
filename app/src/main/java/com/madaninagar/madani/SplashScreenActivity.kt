@@ -1,4 +1,4 @@
-package com.rktuhinbd.madani
+package com.madaninagar.madani
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
