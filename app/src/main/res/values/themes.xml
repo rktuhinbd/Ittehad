@@ -25,7 +25,7 @@
         <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
-     <!-- Layout Padding With Transparent Background. -->
+    <!-- Layout Padding With Transparent Background. -->
     <style name="LayoutStyle">
         <item name="android:padding">@dimen/layout_padding_24</item>
         <item name="android:background">@color/color_transparent</item>
@@ -278,6 +278,18 @@
         <item name="android:textColor">@color/color_blue_grey_3_0A3142</item>
         <item name="android:textColorHint">@color/color_blue_grey_3_0A3142_60</item>
         <item name="android:textSize">@dimen/text_size_h6</item>
+    </style>
+
+    <!-- EditText SFPro Dark Style -->
+    <style name="EditTextStyleSFProWhiteH7" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="inputType">text</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="paddingStart">@dimen/_12dp</item>
+        <item name="paddingEnd">@dimen/_12dp</item>
+        <item name="android:textColorHint">@color/color_ash_2_E3E6EB</item>
+        <item name="android:textSize">@dimen/text_size_h7</item>
     </style>
 
 

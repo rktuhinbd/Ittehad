@@ -36,7 +36,6 @@ class HomeActivity : AppCompatActivity() {
         binding.rvHome.adapter = recyclerAdapter
 
         recyclerAdapter.onItemClick = {
-            // Todo Open Activities according to recycler item selection
             when (it.id) {
                 1 -> {
                     val i = Intent(this@HomeActivity, AsatijayeKeramActivity::class.java)
