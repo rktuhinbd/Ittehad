@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_transparent"
+        android:paddingStart="@dimen/_24dp"
+        android:paddingEnd="@dimen/_24dp">
+
+        <ImageView
+            android:id="@+id/ivToolbarBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:translationZ="@dimen/_1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back_arrow_navyblue"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/TextStyleLexendBlueGreyH7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Toolbar Title"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivToolbarBack"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

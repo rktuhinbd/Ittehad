@@ -38,11 +38,11 @@ android {
         viewBinding true
     }
     buildToolsVersion '30.0.3'
-    compileSdkVersion 30
+    compileSdkVersion 31
 }
 def lifeCycleExtensionsVersion = '1.1.1'
 def supportVersion = '28.0.0'
-def ktxVersion = '1.7.0'
+def ktxVersion = '1.6.0'
 def appcompatVersion = '1.4.0'
 def materialVersion = '1.4.0'
 def constrainVersion = '2.1.2'

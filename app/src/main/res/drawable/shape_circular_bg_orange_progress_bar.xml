@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="270"
+    android:toDegrees="270">
+    <shape
+        android:innerRadiusRatio="2.5"
+        android:shape="ring"
+        android:thickness="@dimen/_10dp"
+        android:useLevel="true"><!-- this line fixes the issue for lollipop api 21 -->
+
+        <corners android:radius="@dimen/_2dp" />
+
+        <solid android:color="@color/color_yellow_orange_F3AE3D" />
+
+        <!-- The commented code section is to make the drawable gradient -->
+
+        <!--        <gradient-->
+        <!--            android:angle="0"-->
+        <!--            android:endColor="@color/color_yellow_orange_F3AE3D"-->
+        <!--            android:startColor="@color/color_yellow_orange_F3AE3D"-->
+        <!--            android:type="sweep"-->
+        <!--            android:useLevel="false" />-->
+    </shape>
+</rotate>

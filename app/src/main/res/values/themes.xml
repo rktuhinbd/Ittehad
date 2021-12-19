@@ -25,4 +25,275 @@
         <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
     </style>
 
+     <!-- Layout Padding With Transparent Background. -->
+    <style name="LayoutStyle">
+        <item name="android:padding">@dimen/layout_padding_24</item>
+        <item name="android:background">@color/color_transparent</item>
+    </style>
+
+
+    <!-- Layout Padding With Primary Background. -->
+    <style name="LayoutStyle2">
+        <item name="android:padding">@dimen/layout_padding_12</item>
+        <item name="android:background">@color/color_teal_5_0490A1</item>
+    </style>
+
+
+    <!-- Layout Padding With Transparent Background. -->
+    <style name="LayoutStyle3">
+        <item name="android:padding">@dimen/layout_padding_12</item>
+        <item name="android:background">@color/color_transparent</item>
+    </style>
+
+
+    <!-- Default Button Style 1 -->
+    <style name="ButtonAppTheme.Default.Large" parent="android:Widget.Button">
+        <item name="android:background">@drawable/shape_rounded_bg_teal_5_st_teal_6</item>
+        <item name="android:paddingStart">@dimen/padding_12dp</item>
+        <item name="android:paddingEnd">@dimen/padding_12dp</item>
+        <item name="android:textSize">@dimen/button_text_17sp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:paddingBottom">@dimen/_8dp</item>
+        <item name="android:height">@dimen/default_button_height_large</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+
+    <!-- Default Button Style 2 -->
+    <style name="ButtonAppTheme.Default.Small" parent="android:Widget.Button">
+        <item name="android:background">@drawable/shape_rounded_bg_teal_5_st_teal_6</item>
+        <item name="android:paddingStart">@dimen/padding_12dp</item>
+        <item name="android:paddingEnd">@dimen/padding_12dp</item>
+        <item name="android:textSize">@dimen/button_text_17sp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:paddingBottom">@dimen/_8dp</item>
+        <item name="android:height">@dimen/default_button_height_small</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+
+    <!-- Button with tick Style -->
+    <style name="ButtonAppTheme.WithOutTick" parent="android:Widget.Button">
+        <item name="android:background">@drawable/selector_multiple_choice</item>
+        <item name="android:state_selected">false</item>
+        <item name="android:paddingStart">@dimen/padding_12dp</item>
+        <item name="android:paddingEnd">@dimen/padding_12dp</item>
+        <item name="android:height">@dimen/default_button_height_small</item>
+        <item name="android:textSize">@dimen/button_text_17sp</item>
+        <item name="android:paddingTop">@dimen/_4dp</item>
+        <item name="android:paddingBottom">@dimen/_8dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+    </style>
+
+    <!-- Button with tick Style -->
+    <style name="ButtonAppTheme.WithTick" parent="android:Widget.Button">
+        <item name="android:background">@drawable/selector_multiple_choice</item>
+        <item name="android:state_selected">true</item>
+        <item name="android:height">@dimen/default_button_height_small</item>
+        <item name="android:paddingStart">@dimen/padding_12dp</item>
+        <item name="android:paddingEnd">@dimen/padding_12dp</item>
+        <item name="android:textSize">@dimen/button_text_17sp</item>
+        <item name="android:drawableEnd">@drawable/ic_tick_teal</item>
+        <item name="android:paddingTop">@dimen/_4dp</item>
+        <item name="android:paddingBottom">@dimen/_8dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+    </style>
+
+    <!-- Button Unlock -->
+    <style name="ButtonAppTheme.Unlock" parent="android:Widget.Button">
+        <item name="android:background">@drawable/shape_rounded_bg_white_48</item>
+        <item name="android:textSize">@dimen/button_text_17sp</item>
+        <item name="android:paddingBottom">@dimen/_12dp</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+    </style>
+
+
+    <!-- Button True False Option -->
+    <style name="ButtonAppTheme.TrueFalse" parent="android:Widget.Button">
+        <item name="android:background">@drawable/shape_rounded_bg_white_st_teal_2</item>
+        <item name="android:height">@dimen/_52dp</item>
+        <item name="android:textSize">@dimen/button_text_19sp</item>
+        <item name="android:paddingStart">@dimen/_24dp</item>
+        <item name="android:paddingEnd">@dimen/_24dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:fontFamily">@font/lexend_regular</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+    </style>
+
+
+    <!-- Heading1 Text Lexend Black2 Style -->
+    <style name="TextStyleLexendDarkH1" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_semi_bold</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+        <item name="android:textSize">@dimen/text_size_h2</item>
+    </style>
+
+
+    <!-- Heading2 Text Lexend  Style -->
+    <style name="TextStyleLexendDarkH2" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_semi_bold</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+        <item name="android:textSize">@dimen/text_size_h2</item>
+    </style>
+
+
+    <!-- Heading2 Text Lexend White Style -->
+    <style name="TextStyleLexendWhiteH2" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_bold</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_h2</item>
+    </style>
+
+
+    <!-- Heading3 Text SFPro Black2 Style -->
+    <style name="TextStyleLexendDarkH3" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_semi_bold</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+        <item name="android:textSize">@dimen/text_size_h3</item>
+    </style>
+
+
+    <!-- Heading4 Text SFPro Black2 Style -->
+    <style name="TextStyleLexendDarkH4" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_semi_bold</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+        <item name="android:textSize">@dimen/text_size_h4</item>
+    </style>
+
+
+    <!-- Heading5 Text Lexend Black2 Style -->
+    <style name="TextStyleLexendDarkH5" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_semi_bold</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+    </style>
+
+
+    <!-- Heading6 Text SFPro Black2 Style -->
+    <style name="TextStyleSFProDarkRegularBlueDarkH6" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/color_blue_grey_2_263F4A</item>
+        <item name="android:textSize">@dimen/text_size_h6</item>
+    </style>
+
+
+    <!-- Heading6 Text Lexend Black2 Style -->
+    <style name="TextStyleLexendDarkH6" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_semi_bold</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+        <item name="android:textSize">@dimen/text_size_h6</item>
+    </style>
+
+
+    <!-- Body Text H6 Lexend White Style -->
+    <style name="TextStyleLexendMediumWhiteH6" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_h6</item>
+    </style>
+
+
+    <!-- Body Text H6 Lexend Black2 Style -->
+    <style name="TextStyleLexendMediumDarkH6" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+        <item name="android:textSize">@dimen/text_size_h6</item>
+    </style>
+
+
+    <!-- Body Text H7 Lexend White Style -->
+    <style name="TextStyleLexendWhiteH7" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_regular</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_h7</item>
+    </style>
+
+
+    <!-- Body Text H7 h7 SFPro White Style -->
+    <style name="TextStyleSFProWhiteH7" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/text_size_h7</item>
+    </style>
+
+
+    <!-- Body Text SFPro BlueGrey Style -->
+    <style name="TextStyleSFProMediumBlueGreyH7" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:textColor">@color/color_blue_grey_2_263F4A</item>
+        <item name="android:textSize">@dimen/text_size_h7</item>
+    </style>
+
+
+    <!-- Body Text SFPro BlueGrey Style -->
+    <style name="TextStyleSFProBlueGreyH7" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/color_blue_grey_2_263F4A</item>
+        <item name="android:textSize">@dimen/text_size_h7</item>
+    </style>
+
+
+    <!-- Body Text Lexend Blue Grey Style -->
+    <style name="TextStyleLexendBlueGreyH7" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_regular</item>
+        <item name="android:textColor">@color/color_blue_grey_2_263F4A</item>
+        <item name="android:textSize">@dimen/text_size_h7</item>
+    </style>
+
+
+    <!-- Body Text Lexend Blue Grey Style -->
+    <style name="TextStyleLexendDarkH8" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_regular</item>
+        <item name="android:textColor">@color/color_black_2_042B3A</item>
+        <item name="android:textSize">@dimen/text_size_h8</item>
+    </style>
+
+
+    <!-- Body Text SFPro Dark Style -->
+    <style name="TextStyleLexendTeal5H8" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_regular</item>
+        <item name="android:textColor">@color/color_teal_5_0490A1</item>
+        <item name="android:textSize">@dimen/text_size_h8</item>
+    </style>
+
+
+    <!-- Body Text SFPro Dark Style -->
+    <style name="TextStyleSFProBlueGreyH8" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/color_blue_grey_2_263F4A</item>
+        <item name="android:textSize">@dimen/text_size_h8</item>
+    </style>
+
+
+    <!-- EditText SFPro Dark Style -->
+    <style name="EditTextStyleSFProBlueGreyH6" parent="Widget.AppCompat.EditText">
+        <item name="android:fontFamily">@font/sf_pro_text_medium</item>
+        <item name="android:textColor">@color/color_blue_grey_3_0A3142</item>
+        <item name="android:textColorHint">@color/color_blue_grey_3_0A3142_60</item>
+        <item name="android:textSize">@dimen/text_size_h6</item>
+    </style>
+
+
+    <!-- EditText Lexend Dark Style -->
+    <style name="EditTextStyleLexendBlueGreyH7" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/shape_rounded_bg_white_8</item>
+        <item name="android:fontFamily">@font/lexend_regular</item>
+        <item name="android:textColor">@color/color_blue_grey_3_0A3142</item>
+        <item name="android:textColorHint">@color/color_blue_grey_2_263F4A</item>
+        <item name="drawableStartCompat">@drawable/ic_search_teal</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingStart">@dimen/_12dp</item>
+        <item name="android:paddingEnd">@dimen/_12dp</item>
+        <item name="android:drawablePadding">@dimen/_8dp</item>
+        <item name="android:textSize">@dimen/text_size_h7</item>
+    </style>
+
+
 </resources>

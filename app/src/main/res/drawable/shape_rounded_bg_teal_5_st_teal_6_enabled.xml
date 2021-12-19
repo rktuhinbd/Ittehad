@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This is the stroke -->
+    <item>
+        <shape>
+            <solid android:color="@color/color_teal_6_0C6975" />
+            <corners android:radius="@dimen/_48dp" />
+        </shape>
+    </item>
+    <!-- This is the main color -->
+    <item android:bottom="@dimen/_4dp">
+        <shape>
+            <solid android:color="@color/color_teal_5_0490A1" />
+            <corners android:radius="@dimen/_48dp" />
+        </shape>
+    </item>
+</layer-list>

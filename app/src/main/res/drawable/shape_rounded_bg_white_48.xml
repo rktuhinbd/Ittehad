@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- This is the stroke -->
+    <item>
+        <shape>
+            <solid android:color="@color/color_ash_3_DDE2EB" />
+            <corners android:radius="@dimen/_48dp" />
+        </shape>
+    </item>
+    <!-- This is the main color -->
+    <item android:bottom="@dimen/_4dp">
+        <shape>
+            <solid android:color="@color/color_white" />
+            <corners android:radius="@dimen/_48dp" />
+        </shape>
+    </item>
+</layer-list>
