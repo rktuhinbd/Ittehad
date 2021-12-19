@@ -29,6 +29,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rabeta">
         <activity
+            android:name=".dimashik_madani.DimashikmadaniActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update_information.UpdateInformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".jamat_protinidhee.JamatProtinidheeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".madani_committee.MadaniCommitteeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".abnaye_rahmania.AbnayeRahmaniaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".asatijaye_keram.AsatijayeKeramActivity"
+            android:exported="false" />
+        <activity
             android:name=".home.view.activity.HomeActivity"
             android:exported="false" />
         <activity
