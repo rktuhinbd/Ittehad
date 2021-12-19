@@ -6,7 +6,48 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".view.activity.HomeActivity">
+        android:background="@color/color_ash_5_2D4854_20"
+        tools:context=".home.view.activity.HomeActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/design_default_color_primary"
+            android:paddingStart="@dimen/_48dp"
+            android:paddingEnd="@dimen/_16dp">
+
+            <ImageView
+                android:id="@+id/ivGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_16dp"
+                android:src="@drawable/ic_group_white"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/ivNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_toStartOf="@+id/ivGroup"
+                android:src="@drawable/ic_notifications_white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvToolbarTitle"
+                style="@style/TextStyleLexendWhiteH7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/ivNotifications"
+                android:text="@string/app_name"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvHome"
@@ -16,7 +57,8 @@
             android:layout_marginStart="@dimen/_16dp"
             android:layout_marginEnd="@dimen/_16dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:itemCount="6" />
+            tools:itemCount="6"
+            tools:listitem="@layout/item_home" />
 
     </RelativeLayout>
 

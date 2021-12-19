@@ -1,4 +1,4 @@
-package com.madaninagar.madani.view_model
+package com.madaninagar.madani.home.view_model
 
 import androidx.lifecycle.ViewModel
 

@@ -4,9 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
-import com.madaninagar.madani.R
 import com.madaninagar.madani.databinding.ActivitySplashScreenBinding
-import com.madaninagar.madani.view.activity.HomeActivity
+import com.madaninagar.madani.home.view.activity.HomeActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 

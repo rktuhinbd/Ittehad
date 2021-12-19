@@ -29,7 +29,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rabeta">
         <activity
-            android:name=".view.activity.HomeActivity"
+            android:name=".home.view.activity.HomeActivity"
             android:exported="false" />
         <activity
             android:name=".splash.SplashScreenActivity"
