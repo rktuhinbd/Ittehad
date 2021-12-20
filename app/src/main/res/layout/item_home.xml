@@ -23,9 +23,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingStart="@dimen/_20dp"
-            android:paddingTop="@dimen/_8dp"
+            android:paddingTop="@dimen/_10dp"
             android:paddingEnd="@dimen/_20dp"
-            android:paddingBottom="@dimen/_8dp"
+            android:paddingBottom="@dimen/_10dp"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView

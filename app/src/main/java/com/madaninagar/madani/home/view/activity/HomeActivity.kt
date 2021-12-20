@@ -68,12 +68,12 @@ class HomeActivity : AppCompatActivity() {
     private fun generateDummyList(): ArrayList<Data> {
         val dataList = ArrayList<Data>()
 
-        dataList += Data(1, "Asatijaye Keram", R.drawable.ic_king_crown)
-        dataList += Data(2, "Abnaye Rahmania", R.drawable.ic_king_crown)
-        dataList += Data(3, "Madani Committee", R.drawable.ic_king_crown)
-        dataList += Data(4, "Jamat Protinidhee", R.drawable.ic_king_crown)
-        dataList += Data(5, "Update Information", R.drawable.ic_king_crown)
-        dataList += Data(6, "Di-Mashik Madani", R.drawable.ic_king_crown)
+        dataList += Data(1, "আসাতিযায়ে কেরাম", R.drawable.ic_king_crown)
+        dataList += Data(2, "আবনায়ে রাহমানিয়া", R.drawable.ic_king_crown)
+        dataList += Data(3, "মাদানী কমিটি", R.drawable.ic_king_crown)
+        dataList += Data(4, "জামাত প্রতিনিধি", R.drawable.ic_king_crown)
+        dataList += Data(5, "তথ্য সংস্করণ", R.drawable.ic_king_crown)
+        dataList += Data(6, "দ্বি-মাসিক মাদানী", R.drawable.ic_king_crown)
 
         return dataList
     }

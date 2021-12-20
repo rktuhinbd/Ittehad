@@ -13,13 +13,15 @@
             layout="@layout/layout_toolbar_search" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTest"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/toolbar"
             android:layout_margin="@dimen/_16dp"
             android:clipToPadding="false"
+            tools:listitem="@layout/item_asatijaye_keram"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:itemCount="6" />
+            tools:itemCount="10" />
 
     </RelativeLayout>
 

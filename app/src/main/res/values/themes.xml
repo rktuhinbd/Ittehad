@@ -265,6 +265,14 @@
 
 
     <!-- Body Text SFPro Dark Style -->
+    <style name="TextStyleLexendWhiteH8" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_h8</item>
+    </style>
+
+
+    <!-- Body Text SFPro Dark Style -->
     <style name="TextStyleSFProBlueGreyH8" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/sf_pro_text_regular</item>
         <item name="android:textColor">@color/color_blue_grey_2_263F4A</item>
