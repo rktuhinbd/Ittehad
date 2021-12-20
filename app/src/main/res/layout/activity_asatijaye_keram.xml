@@ -10,7 +10,7 @@
 
         <include
             android:id="@+id/toolbar"
-            layout="@layout/layout_toolbar_transparent" />
+            layout="@layout/layout_toolbar_search" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

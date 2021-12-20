@@ -43,8 +43,8 @@
 
             <ImageView
                 android:id="@+id/ivSearch"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/ic_search_teal"
@@ -62,8 +62,8 @@
 
             <ImageView
                 android:id="@+id/ivCancel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="@dimen/_20dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 app:srcCompat="@drawable/ic_cross_white"
@@ -81,7 +81,8 @@
                 android:drawableStart="@drawable/ic_search_teal"
                 android:drawablePadding="@dimen/_12dp"
                 android:drawableTint="@color/white"
-                android:hint="Search here" />
+                android:hint="Search here"
+                tools:ignore="HardcodedText" />
 
         </RelativeLayout>
 
