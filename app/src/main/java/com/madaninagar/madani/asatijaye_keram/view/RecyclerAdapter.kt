@@ -78,7 +78,6 @@ class RecyclerAdapter(context: Context, dataSet: List<Data>) :
         val intent = Intent(Intent.ACTION_SENDTO)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
         intent.data = Uri.parse("smsto:+88$phoneNumber") // This ensures only SMS apps respond
-
         intent.putExtra("sms_body", "")
         context.startActivity(intent)
     }
