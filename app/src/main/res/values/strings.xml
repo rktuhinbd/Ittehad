@@ -7,4 +7,10 @@
     <string name="post_">পোস্ট:</string>
     <string name="thana_">থানা:</string>
     <string name="zilla_">জেলা:</string>
+    <string name="asatijaye_keram">আসাতিযায়ে কেরাম</string>
+    <string name="abnaye_rahmania">আবনায়ে রাহমানিয়া</string>
+    <string name="madani_committee">মাদানী কমিটি</string>
+    <string name="jamat_protinidhee">জামাত প্রতিনিধি</string>
+    <string name="update_information">তথ্য সংস্করণ</string>
+    <string name="di_mashik_madani">দ্বি-মাসিক মাদানী</string>
 </resources>

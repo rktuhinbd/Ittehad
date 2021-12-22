@@ -173,6 +173,14 @@
     </style>
 
 
+    <!-- Heading5 Text Lexend White Style -->
+    <style name="TextStyleLexendWhiteH5" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/lexend_semi_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_h5</item>
+    </style>
+
+
     <!-- Heading6 Text SFPro Black2 Style -->
     <style name="TextStyleSFProDarkRegularBlueDarkH6" parent="Widget.AppCompat.TextView">
         <item name="android:fontFamily">@font/sf_pro_text_regular</item>

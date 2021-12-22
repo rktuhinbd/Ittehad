@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/activity_bg_color"
-        tools:context=".asatijaye_keram.AsatijayeKeramActivity">
+        tools:context=".asatijaye_keram.view.AsatijayeKeramActivity">
 
         <include
             android:id="@+id/toolbar"
@@ -20,7 +20,7 @@
             android:layout_below="@+id/toolbar"
             android:layout_margin="@dimen/_16dp"
             android:clipToPadding="false"
-            tools:listitem="@layout/item_asatijaye_keram"
+            tools:listitem="@layout/item_mawlana_inforamtion"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:itemCount="10" />
 

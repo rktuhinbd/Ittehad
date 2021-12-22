@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madaninagar.madani.R
-import com.madaninagar.madani.abnaye_rahmania.AbnayeRahmaniaActivity
-import com.madaninagar.madani.asatijaye_keram.AsatijayeKeramActivity
+import com.madaninagar.madani.abnaye_rahmania.view.AbnayeRahmaniaActivity
+import com.madaninagar.madani.asatijaye_keram.view.AsatijayeKeramActivity
 import com.madaninagar.madani.databinding.ActivityHomeBinding
 import com.madaninagar.madani.dimashik_madani.DimashikmadaniActivity
 import com.madaninagar.madani.home.model.Data
@@ -38,28 +38,22 @@ class HomeActivity : AppCompatActivity() {
         recyclerAdapter.onItemClick = {
             when (it.id) {
                 1 -> {
-                    val i = Intent(this@HomeActivity, AsatijayeKeramActivity::class.java)
-                    startActivity(i)
+                    startActivity(Intent(this@HomeActivity, AsatijayeKeramActivity::class.java))
                 }
                 2 -> {
-                    val i = Intent(this@HomeActivity, AbnayeRahmaniaActivity::class.java)
-                    startActivity(i)
+                    startActivity(Intent(this@HomeActivity, AbnayeRahmaniaActivity::class.java))
                 }
                 3 -> {
-                    val i = Intent(this@HomeActivity, MadaniCommitteeActivity::class.java)
-                    startActivity(i)
+                    startActivity(Intent(this@HomeActivity, MadaniCommitteeActivity::class.java))
                 }
                 4 -> {
-                    val i = Intent(this@HomeActivity, JamatProtinidheeActivity::class.java)
-                    startActivity(i)
+                    startActivity(Intent(this@HomeActivity, JamatProtinidheeActivity::class.java))
                 }
                 5 -> {
-                    val i = Intent(this@HomeActivity, UpdateInformationActivity::class.java)
-                    startActivity(i)
+                    startActivity(Intent(this@HomeActivity, UpdateInformationActivity::class.java))
                 }
                 6 -> {
-                    val i = Intent(this@HomeActivity, DimashikmadaniActivity::class.java)
-                    startActivity(i)
+                    startActivity(Intent(this@HomeActivity, DimashikmadaniActivity::class.java))
                 }
             }
         }
@@ -68,12 +62,12 @@ class HomeActivity : AppCompatActivity() {
     private fun generateDummyList(): ArrayList<Data> {
         val dataList = ArrayList<Data>()
 
-        dataList += Data(1, "আসাতিযায়ে কেরাম", R.drawable.ic_king_crown)
-        dataList += Data(2, "আবনায়ে রাহমানিয়া", R.drawable.ic_king_crown)
-        dataList += Data(3, "মাদানী কমিটি", R.drawable.ic_king_crown)
-        dataList += Data(4, "জামাত প্রতিনিধি", R.drawable.ic_king_crown)
-        dataList += Data(5, "তথ্য সংস্করণ", R.drawable.ic_king_crown)
-        dataList += Data(6, "দ্বি-মাসিক মাদানী", R.drawable.ic_king_crown)
+        dataList += Data(1, getString(R.string.asatijaye_keram), R.drawable.ic_king_crown)
+        dataList += Data(2, getString(R.string.abnaye_rahmania), R.drawable.ic_king_crown)
+        dataList += Data(3, getString(R.string.madani_committee), R.drawable.ic_king_crown)
+        dataList += Data(4, getString(R.string.jamat_protinidhee), R.drawable.ic_king_crown)
+        dataList += Data(5, getString(R.string.update_information), R.drawable.ic_king_crown)
+        dataList += Data(6, getString(R.string.di_mashik_madani), R.drawable.ic_king_crown)
 
         return dataList
     }

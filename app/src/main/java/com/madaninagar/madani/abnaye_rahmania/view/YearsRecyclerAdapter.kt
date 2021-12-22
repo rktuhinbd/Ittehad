@@ -1,4 +1,4 @@
-package com.madaninagar.madani.asatijaye_keram.view
+package com.madaninagar.madani.abnaye_rahmania.view
 
 import android.content.Context
 import android.content.Intent
@@ -7,15 +7,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.madaninagar.madani.asatijaye_keram.model.Data
+import com.madaninagar.madani.abnaye_rahmania.model.YearsData
 import com.madaninagar.madani.databinding.ItemMawlanaInforamtionBinding
 
-class RecyclerAdapter(context: Context, dataSet: List<Data>) :
-    RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+class YearsRecyclerAdapter(context: Context, dataSet: List<YearsData>) :
+    RecyclerView.Adapter<YearsRecyclerAdapter.ViewHolder>() {
 
-    private var dataList: List<Data> = dataSet
+    private var dataList: List<YearsData> = dataSet
     private var context: Context = context
-    var onItemClick: ((Data) -> Unit)? = null
+    var onItemClick: ((YearsData) -> Unit)? = null
 
     class ViewHolder(val binding: ItemMawlanaInforamtionBinding) :
         RecyclerView.ViewHolder(binding.root) {}
