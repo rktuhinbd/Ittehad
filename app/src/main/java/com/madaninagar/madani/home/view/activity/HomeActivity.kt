@@ -5,13 +5,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madaninagar.madani.R
-import com.madaninagar.madani.abnaye_rahmania.view.AbnayeRahmaniaActivity
+import com.madaninagar.madani.abnaye_rahmania.view.activity.AbnayeRahmaniaActivity
 import com.madaninagar.madani.asatijaye_keram.view.AsatijayeKeramActivity
 import com.madaninagar.madani.databinding.ActivityHomeBinding
 import com.madaninagar.madani.dimashik_madani.DimashikmadaniActivity
 import com.madaninagar.madani.home.model.Data
 import com.madaninagar.madani.home.view.adapter.RecyclerAdapter
-import com.madaninagar.madani.jamat_protinidhee.JamatProtinidheeActivity
+import com.madaninagar.madani.jamat_protinidhee.view.JamatProtinidheeActivity
 import com.madaninagar.madani.madani_committee.MadaniCommitteeActivity
 import com.madaninagar.madani.update_information.UpdateInformationActivity
 

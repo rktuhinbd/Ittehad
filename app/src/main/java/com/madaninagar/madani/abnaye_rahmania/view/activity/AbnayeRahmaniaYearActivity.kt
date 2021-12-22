@@ -1,10 +1,11 @@
-package com.madaninagar.madani.abnaye_rahmania.view
+package com.madaninagar.madani.abnaye_rahmania.view.activity
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madaninagar.madani.abnaye_rahmania.model.YearsData
+import com.madaninagar.madani.abnaye_rahmania.view.adapter.YearsRecyclerAdapter
 import com.madaninagar.madani.databinding.ActivityAbnayeRahmaniaYearBinding
 
 class AbnayeRahmaniaYearActivity : AppCompatActivity() {

@@ -29,8 +29,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Main">
         <activity
-            android:name=".abnaye_rahmania.view.AbnayeRahmaniaYearActivity"
-            android:exported="false" />
+            android:name=".abnaye_rahmania.view.activity.AbnayeRahmaniaYearActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".dimashik_madani.DimashikmadaniActivity"
             android:exported="false"
@@ -42,7 +44,7 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".jamat_protinidhee.JamatProtinidheeActivity"
+            android:name=".jamat_protinidhee.view.JamatProtinidheeActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
@@ -52,7 +54,7 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".abnaye_rahmania.view.AbnayeRahmaniaActivity"
+            android:name=".abnaye_rahmania.view.activity.AbnayeRahmaniaActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />

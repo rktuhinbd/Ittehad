@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/activity_bg_color"
-        tools:context=".abnaye_rahmania.view.AbnayeRahmaniaYearActivity">
+        tools:context=".abnaye_rahmania.view.activity.AbnayeRahmaniaYearActivity">
 
         <include
             android:id="@+id/toolbar"

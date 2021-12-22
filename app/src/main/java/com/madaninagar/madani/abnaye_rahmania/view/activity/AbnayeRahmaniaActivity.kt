@@ -1,4 +1,4 @@
-package com.madaninagar.madani.abnaye_rahmania.view
+package com.madaninagar.madani.abnaye_rahmania.view.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import com.madaninagar.madani.R
 import com.madaninagar.madani.abnaye_rahmania.model.Data
+import com.madaninagar.madani.abnaye_rahmania.view.adapter.RecyclerAdapter
 import com.madaninagar.madani.databinding.ActivityAbnayeRahmaniaBinding
 
 class AbnayeRahmaniaActivity : AppCompatActivity() {

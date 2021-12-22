@@ -1,4 +1,4 @@
-package com.madaninagar.madani.abnaye_rahmania.view
+package com.madaninagar.madani.abnaye_rahmania.view.adapter
 
 import android.content.Context
 import android.view.LayoutInflater

@@ -1,30 +1,29 @@
-package com.madaninagar.madani.abnaye_rahmania.view
+package com.madaninagar.madani.jamat_protinidhee.view
 
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.madaninagar.madani.abnaye_rahmania.model.YearsData
-import com.madaninagar.madani.databinding.ItemMawlanaInforamtionBinding
+import com.madaninagar.madani.databinding.ItemMawlanaContactBinding
+import com.madaninagar.madani.jamat_protinidhee.model.Data
 
-class YearsRecyclerAdapter(context: Context, dataSet: List<YearsData>) :
-    RecyclerView.Adapter<YearsRecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter(context: Context, dataSet: List<Data>) :
+    RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    private var dataList: List<YearsData> = dataSet
+    private var dataList: List<Data> = dataSet
     private var context: Context = context
-    var onItemClick: ((YearsData) -> Unit)? = null
+    private var onItemClick: ((Data) -> Unit)? = null
 
-    class ViewHolder(val binding: ItemMawlanaInforamtionBinding) :
+    class ViewHolder(val binding: ItemMawlanaContactBinding) :
         RecyclerView.ViewHolder(binding.root) {}
 
     // Create new views (invoked by the layout manager)
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         // Create a new view, which defines the UI of the list item
         val inflater = LayoutInflater.from(viewGroup.context)
-        val binding = ItemMawlanaInforamtionBinding.inflate(inflater)
+        val binding = ItemMawlanaContactBinding.inflate(inflater)
         return ViewHolder(binding)
     }
 
@@ -33,14 +32,9 @@ class YearsRecyclerAdapter(context: Context, dataSet: List<YearsData>) :
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.binding.tvIndex.text = (position + 1).toString()
         viewHolder.binding.tvName.text = dataList[position].name
         viewHolder.binding.tvContact.text = dataList[position].phone
-        viewHolder.binding.tvAddress.text = dataList[position].address
-        viewHolder.binding.tvVillage.text = dataList[position].village
-        viewHolder.binding.tvPost.text = dataList[position].postOffice
-        viewHolder.binding.tvThana.text = dataList[position].thana
-        viewHolder.binding.tvZilla.text = dataList[position].zilla
+        viewHolder.binding.tvYear.text = dataList[position].year
 
         viewHolder.binding.ivCall.setOnClickListener {
             showDialer(dataList[position].phone)
@@ -55,14 +49,6 @@ class YearsRecyclerAdapter(context: Context, dataSet: List<YearsData>) :
             onItemClick?.invoke(dataList[position])
 
             //TODO Click listener will send click information to activity
-            if (dataList[position].isExpanded) {
-                viewHolder.binding.layoutAddress.visibility = View.GONE
-                dataList[position].isExpanded = false
-            } else {
-                viewHolder.binding.layoutAddress.visibility = View.VISIBLE
-                dataList[position].isExpanded = true
-            }
-
         }
     }
 

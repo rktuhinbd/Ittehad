@@ -86,6 +86,8 @@
                             style="@style/TextStyleLexendWhiteH7"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_4dp"
+                            android:layout_toStartOf="@+id/ivCall"
                             android:text="@string/name" />
 
                     </RelativeLayout>
@@ -113,6 +115,8 @@
                             style="@style/TextStyleLexendWhiteH8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_4dp"
+                            android:layout_toStartOf="@+id/ivMessage"
                             android:text="@string/_01xxxxxxxxx" />
 
                     </RelativeLayout>
