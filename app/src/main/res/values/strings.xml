@@ -2,4 +2,9 @@
     <string name="app_name">Madani</string>
     <string name="name">Name</string>
     <string name="_01xxxxxxxxx">01XXXXXXXXX</string>
+    <string name="address_">ঠিকানা:</string>
+    <string name="village_">গ্রাম:</string>
+    <string name="post_">পোস্ট:</string>
+    <string name="thana_">থানা:</string>
+    <string name="zilla_">জেলা:</string>
 </resources>

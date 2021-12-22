@@ -12,19 +12,27 @@ class AsatijayeKeramActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAsatijayeKeramBinding
     private lateinit var recyclerAdapter: RecyclerAdapter
+    private lateinit var dataList: List<Data>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAsatijayeKeramBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val dataList: List<Data> = generateDummyList()
+        initComponents()
+        initListeners()
 
-        binding.rvTest.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        recyclerAdapter = RecyclerAdapter(dataList)
+    }
+
+    private fun initComponents() {
+        dataList = generateDummyList()
+
+        binding.rvTest.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recyclerAdapter = RecyclerAdapter(this, dataList)
         binding.rvTest.adapter = recyclerAdapter
+    }
 
+    private fun initListeners() {
         binding.toolbar.ivSearch.setOnClickListener {
             binding.toolbar.layoutTitle.visibility = View.GONE
             binding.toolbar.layoutSearch.visibility = View.VISIBLE
@@ -40,14 +48,14 @@ class AsatijayeKeramActivity : AppCompatActivity() {
     private fun generateDummyList(): ArrayList<Data> {
         val dataList = ArrayList<Data>()
 
-        dataList += Data(1, "মোঃ রেজাউল করিম", "01841752600")
-        dataList += Data(2, "মোঃ রেজাউল করিম", "01841752600")
-        dataList += Data(3, "মোঃ রেজাউল করিম", "01841752600")
-        dataList += Data(4, "মোঃ রেজাউল করিম", "01841752600")
-        dataList += Data(5, "মোঃ রেজাউল করিম", "01841752600")
-        dataList += Data(6, "মোঃ রেজাউল করিম", "01841752600")
-        dataList += Data(7, "মোঃ রেজাউল করিম", "01841752600")
-        dataList += Data(8, "মোঃ রেজাউল করিম", "01841752600")
+        dataList += Data(1, "মোঃ রেজাউল করিম", "01841752600", "তোফাজ্জল হোসেনের বাড়ি", "রহিমপুর", "মুরাদনগর", "মুরাদনগর", "কুমিল্লা", false)
+        dataList += Data(2, "মোঃ রেজাউল করিম", "01841752600", "তোফাজ্জল হোসেনের বাড়ি", "রহিমপুর", "মুরাদনগর", "মুরাদনগর", "কুমিল্লা", false)
+        dataList += Data(3, "মোঃ রেজাউল করিম", "01841752600", "তোফাজ্জল হোসেনের বাড়ি", "রহিমপুর", "মুরাদনগর", "মুরাদনগর", "কুমিল্লা", false)
+        dataList += Data(4, "মোঃ রেজাউল করিম", "01841752600", "তোফাজ্জল হোসেনের বাড়ি", "রহিমপুর", "মুরাদনগর", "মুরাদনগর", "কুমিল্লা", false)
+        dataList += Data(5, "মোঃ রেজাউল করিম", "01841752600", "তোফাজ্জল হোসেনের বাড়ি", "রহিমপুর", "মুরাদনগর", "মুরাদনগর", "কুমিল্লা", false)
+        dataList += Data(6, "মোঃ রেজাউল করিম", "01841752600", "তোফাজ্জল হোসেনের বাড়ি", "রহিমপুর", "মুরাদনগর", "মুরাদনগর", "কুমিল্লা", false)
+        dataList += Data(7, "মোঃ রেজাউল করিম", "01841752600", "তোফাজ্জল হোসেনের বাড়ি", "রহিমপুর", "মুরাদনগর", "মুরাদনগর", "কুমিল্লা", false)
+        dataList += Data(8, "মোঃ রেজাউল করিম", "01841752600", "তোফাজ্জল হোসেনের বাড়ি", "রহিমপুর", "মুরাদনগর", "মুরাদনগর", "কুমিল্লা", false)
 
         return dataList
     }
