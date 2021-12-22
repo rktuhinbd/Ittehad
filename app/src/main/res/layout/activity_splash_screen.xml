@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_white"
+        android:background="@color/color_blue_grey_2_263F4A"
         style="@style/LayoutStyle"
         tools:context=".splash.SplashScreenActivity">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardIndex"
+            android:layout_width="@dimen/_164dp"
+            android:layout_height="@dimen/_164dp"
+            app:cardCornerRadius="@dimen/_82dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/teal_700"
+            android:layout_centerInParent="true">
 
-        <TextView
-            style="@style/TextStyleLexendDarkH5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Welcome to Madani Nagar"
-            tools:ignore="HardcodedText" />
+            <TextView
+                style="@style/TextStyleLexendDarkH5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                tools:ignore="HardcodedText"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
 
     </RelativeLayout>
 
