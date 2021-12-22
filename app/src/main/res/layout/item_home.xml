@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,8 +14,8 @@
         android:layout_marginTop="@dimen/_8dp"
         android:layout_marginEnd="@dimen/_4dp"
         android:layout_marginBottom="@dimen/_8dp"
-        android:elevation="@dimen/_4dp"
         app:cardCornerRadius="@dimen/_4dp"
+        android:clipToPadding="false"
         app:cardElevation="@dimen/_4dp">
 
         <LinearLayout
@@ -23,9 +23,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:paddingStart="@dimen/_20dp"
-            android:paddingTop="@dimen/_10dp"
+            android:paddingTop="@dimen/_16dp"
             android:paddingEnd="@dimen/_20dp"
-            android:paddingBottom="@dimen/_10dp"
+            android:paddingBottom="@dimen/_16dp"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
@@ -48,7 +48,7 @@
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </RelativeLayout>
 

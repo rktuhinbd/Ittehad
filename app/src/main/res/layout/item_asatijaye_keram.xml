@@ -13,7 +13,6 @@
         android:layout_marginTop="@dimen/_8dp"
         android:layout_marginEnd="@dimen/_4dp"
         android:layout_marginBottom="@dimen/_8dp"
-        android:elevation="@dimen/_4dp"
         app:cardBackgroundColor="@color/color_teal_5_0490A1"
         app:cardCornerRadius="@dimen/_4dp"
         app:cardElevation="@dimen/_4dp">
@@ -70,7 +69,6 @@
                     android:layout_width="@dimen/_20dp"
                     android:layout_height="@dimen/_20dp"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_call_circular"
                     app:tint="@color/white"
                     tools:ignore="ContentDescription" />
 
@@ -97,7 +95,6 @@
                     android:layout_width="@dimen/_20dp"
                     android:layout_height="@dimen/_20dp"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_paper_plane"
                     app:tint="@color/white"
                     tools:ignore="ContentDescription" />
 
