@@ -111,7 +111,7 @@
                             tools:ignore="ContentDescription" />
 
                         <TextView
-                            android:id="@+id/tvContact"
+                            android:id="@+id/tv_phone_number"
                             style="@style/TextStyleLexendWhiteH8"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

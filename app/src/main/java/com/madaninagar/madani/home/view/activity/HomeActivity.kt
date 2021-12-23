@@ -12,7 +12,7 @@ import com.madaninagar.madani.dimashik_madani.DimashikmadaniActivity
 import com.madaninagar.madani.home.model.Data
 import com.madaninagar.madani.home.view.adapter.RecyclerAdapter
 import com.madaninagar.madani.jamat_protinidhee.view.JamatProtinidheeActivity
-import com.madaninagar.madani.madani_committee.MadaniCommitteeActivity
+import com.madaninagar.madani.madani_committee.view.activity.MadaniCommitteeActivity
 import com.madaninagar.madani.update_information.UpdateInformationActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -23,12 +23,22 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var recyclerAdapter: RecyclerAdapter
 
 
+    // = = = = = Declare Data Properties = = = = = //
+
+    private lateinit var dataList: List<Data>
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val dataList: List<Data> = generateDummyList()
+        initComponents()
+
+    }
+
+    private fun initComponents() {
+        dataList = generateDummyList()
 
         binding.rvHome.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)

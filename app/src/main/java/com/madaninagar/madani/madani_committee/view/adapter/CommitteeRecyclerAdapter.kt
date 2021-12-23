@@ -1,4 +1,4 @@
-package com.madaninagar.madani.jamat_protinidhee.view
+package com.madaninagar.madani.madani_committee.view.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -7,14 +7,14 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.madaninagar.madani.databinding.ItemMawlanaContactBinding
-import com.madaninagar.madani.jamat_protinidhee.model.Data
+import com.madaninagar.madani.madani_committee.model.CommitteeMemberData
 
-class RecyclerAdapter(context: Context, dataSet: List<Data>) :
-    RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
+class CommitteeRecyclerAdapter(context: Context, dataSet: List<CommitteeMemberData>) :
+    RecyclerView.Adapter<CommitteeRecyclerAdapter.ViewHolder>() {
 
-    private var dataList: List<Data> = dataSet
+    private var dataList: List<CommitteeMemberData> = dataSet
     private var context: Context = context
-    private var onItemClick: ((Data) -> Unit)? = null
+    var onItemClick: ((CommitteeMemberData) -> Unit)? = null
 
     class ViewHolder(val binding: ItemMawlanaContactBinding) :
         RecyclerView.ViewHolder(binding.root) {}
@@ -33,22 +33,15 @@ class RecyclerAdapter(context: Context, dataSet: List<Data>) :
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
         viewHolder.binding.tvName.text = dataList[position].name
-        viewHolder.binding.tvPhoneNumber.text = dataList[position].phone
+        viewHolder.binding.tvPhoneNumber.text = dataList[position].phoneNumber
         viewHolder.binding.tvYear.text = dataList[position].year
 
         viewHolder.binding.ivCall.setOnClickListener {
-            showDialer(dataList[position].phone)
+            showDialer(dataList[position].phoneNumber)
         }
 
         viewHolder.binding.ivMessage.setOnClickListener {
-            composeSmsMessage(dataList[position].phone)
-        }
-
-        viewHolder.binding.cardView.setOnClickListener {
-
-            onItemClick?.invoke(dataList[position])
-
-            //TODO Click listener will send click information to activity
+            composeSmsMessage(dataList[position].phoneNumber)
         }
     }
 

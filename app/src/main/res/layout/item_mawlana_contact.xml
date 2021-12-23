@@ -52,7 +52,7 @@
                         android:background="@color/white" />
 
                     <TextView
-                        android:id="@+id/tvContact"
+                        android:id="@+id/tvPhoneNumber"
                         style="@style/TextStyleLexendWhiteH8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
