@@ -285,6 +285,14 @@
     </style>
 
 
+    <!-- Body Text SFPro Dark Style -->
+    <style name="TextStyleSFProBlueGreyH10" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+        <item name="android:textColor">@color/color_blue_grey_3_0A3142</item>
+        <item name="android:textSize">@dimen/text_size_h10</item>
+    </style>
+
+
     <!-- EditText SFPro Dark Style -->
     <style name="EditTextStyleSFProBlueGreyH6" parent="Widget.AppCompat.EditText">
         <item name="android:fontFamily">@font/sf_pro_text_medium</item>

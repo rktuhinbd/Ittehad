@@ -164,5 +164,6 @@
     <dimen name="text_size_h7">17sp</dimen>
     <dimen name="text_size_h8">15sp</dimen>
     <dimen name="text_size_h9">13sp</dimen>
+    <dimen name="text_size_h10">11sp</dimen>
 
 </resources>
