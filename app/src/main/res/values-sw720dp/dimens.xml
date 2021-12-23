@@ -163,5 +163,6 @@
     <dimen name="text_size_h6">38sp</dimen>
     <dimen name="text_size_h7">34sp</dimen>
     <dimen name="text_size_h8">30sp</dimen>
+    <dimen name="text_size_h9">26sp</dimen>
 
 </resources>

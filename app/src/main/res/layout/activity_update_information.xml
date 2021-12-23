@@ -1,9 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".update_information.UpdateInformationActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".update_information.UpdateInformationActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar_transparent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                style="@style/LayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilRollNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/roll_no">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetRollNo"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilFaragotoShon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/faragoto_shon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetFaragotoShon"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/name_if_mistake_remains">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetName"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilFathersName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/fathers_name_if_mistake_remains">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetFathersName"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilVillage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/village_if_mistake_remains">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetVillage"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPostOffice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/post_office_if_mistake_remains">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetPostOffice"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilThana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/thana_if_mistake_remains">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetThana"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilZilla"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/zilla_if_mistake_remains">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetZilla"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_12dp"
+                    android:hint="@string/mobile_no">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetMobile"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilAdvice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_24dp"
+                    android:hint="@string/advice">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetAdvice"
+                        style="@style/EditTextStyleSFProWhiteH9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="5"
+                        android:minLines="1" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmit"
+                    style="@style/ButtonAppTheme.Default.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</layout>

@@ -163,7 +163,6 @@
     <dimen name="text_size_h6">19sp</dimen>
     <dimen name="text_size_h7">17sp</dimen>
     <dimen name="text_size_h8">15sp</dimen>
-    <dimen name="_12sp">12sp</dimen>
-    <dimen name="_364dp">364dp</dimen>
+    <dimen name="text_size_h9">13sp</dimen>
 
 </resources>

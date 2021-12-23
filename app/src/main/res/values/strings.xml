@@ -13,4 +13,15 @@
     <string name="jamat_protinidhee">জামাত প্রতিনিধি</string>
     <string name="update_information">তথ্য সংস্করণ</string>
     <string name="di_mashik_madani">দ্বি-মাসিক মাদানী</string>
+    <string name="roll_no">ক্রমিক নং</string>
+    <string name="faragoto_shon">ফারাগত সন</string>
+    <string name="name_if_mistake_remains">নাম (কোন ভুল থাকলে)</string>
+    <string name="fathers_name_if_mistake_remains">পিতার নাম (কোন ভুল থাকলে)</string>
+    <string name="village_if_mistake_remains">গ্রামের নাম (কোন ভুল থাকলে)</string>
+    <string name="post_office_if_mistake_remains">ডাকঘর (কোন ভুল থাকলে)</string>
+    <string name="thana_if_mistake_remains">থানা (কোন ভুল থাকলে)</string>
+    <string name="zilla_if_mistake_remains">জিলা (যদি কোন ভুল থেকে যায়)</string>
+    <string name="mobile_no">মোবাইল নম্বর</string>
+    <string name="advice">পরামর্শ দিন</string>
+    <string name="submit">জমা দিন</string>
 </resources>

@@ -2,6 +2,7 @@ package com.madaninagar.madani.update_information
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.madaninagar.madani.R
 import com.madaninagar.madani.databinding.ActivityUpdateInformationBinding
 
 class UpdateInformationActivity : AppCompatActivity() {
@@ -12,5 +13,19 @@ class UpdateInformationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityUpdateInformationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        initComponents()
+        initListeners()
+
+    }
+
+
+    private fun initComponents() {
+        binding.toolbar.tvToolbarTitle.text = getString(R.string.update_information)
+    }
+
+
+    private fun initListeners() {
+        binding.toolbar.ivToolbarBack.setOnClickListener { finish() }
     }
 }

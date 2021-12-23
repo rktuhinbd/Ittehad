@@ -163,5 +163,7 @@
     <dimen name="text_size_h6">76sp</dimen>
     <dimen name="text_size_h7">68sp</dimen>
     <dimen name="text_size_h8">60sp</dimen>
+    <dimen name="text_size_h9">52sp</dimen>
+
 
 </resources>
