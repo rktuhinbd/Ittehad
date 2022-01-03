@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.madaninagar.madani.databinding.ItemCommitteeBinding
 import com.madaninagar.madani.madani_committee.model.Data
@@ -11,8 +12,11 @@ import com.madaninagar.madani.madani_committee.model.Data
 class RecyclerAdapter(context: Context, dataSet: List<Data>) :
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    private var dataList: List<Data> = dataSet
     private var context: Context = context
+    private lateinit var recyclerAdapter: CommitteeInfoRecyclerAdapter
+
+    private var dataList: List<Data> = dataSet
+
     var onItemClick: ((Data) -> Unit)? = null
 
     class ViewHolder(val binding: ItemCommitteeBinding) :
@@ -43,6 +47,11 @@ class RecyclerAdapter(context: Context, dataSet: List<Data>) :
             } else {
                 dataList[position].isExpanded = true
                 viewHolder.binding.rvCommitteeMemberInfo.visibility = View.VISIBLE
+
+                viewHolder.binding.rvCommitteeMemberInfo.layoutManager =
+                    LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+                recyclerAdapter = CommitteeInfoRecyclerAdapter(context, dataList[position].data)
+                viewHolder.binding.rvCommitteeMemberInfo.adapter = recyclerAdapter
             }
 
         }
