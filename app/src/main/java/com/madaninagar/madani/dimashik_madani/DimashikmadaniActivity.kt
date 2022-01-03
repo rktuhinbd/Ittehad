@@ -25,7 +25,8 @@ class DimashikmadaniActivity : AppCompatActivity() {
     }
 
     private fun initComponents() {
-        binding.toolbar.tvToolbarTitle.text = getString(R.string.asatijaye_keram)
+        binding.toolbar.tvToolbarTitle.text = getString(R.string.di_mashik_madani)
+        binding.toolbar.ivToolbarBack.setOnClickListener { finish() }
 
         dataList = generateDummyList()
 

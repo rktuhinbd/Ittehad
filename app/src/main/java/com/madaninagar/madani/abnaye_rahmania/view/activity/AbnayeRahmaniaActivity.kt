@@ -25,7 +25,8 @@ class AbnayeRahmaniaActivity : AppCompatActivity() {
     }
 
     private fun initComponents() {
-        binding.toolbar.tvToolbarTitle.text = getString(R.string.asatijaye_keram)
+        binding.toolbar.tvToolbarTitle.text = getString(R.string.abnaye_rahmania)
+        binding.toolbar.ivToolbarBack.setOnClickListener { finish() }
 
         dataList = generateDummyList()
 
