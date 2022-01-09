@@ -1,25 +1,39 @@
 package com.madaninagar.madani.madani_committee.view.activity
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.madaninagar.madani.R
 import com.madaninagar.madani.databinding.ActivityMadaniCommitteeBinding
 import com.madaninagar.madani.madani_committee.model.CommitteeMemberData
-import com.madaninagar.madani.madani_committee.model.Data
-import com.madaninagar.madani.madani_committee.view.adapter.RecyclerAdapter
+import com.madaninagar.madani.madani_committee.model.MemberInfoData
+import com.madaninagar.madani.madani_committee.view.adapter.RecyclerAdapter1
+import com.madaninagar.madani.madani_committee.view.adapter.RecyclerAdapter2
 
 class MadaniCommitteeActivity : AppCompatActivity() {
 
     // = = = = = Declare View Properties = = = = = //
 
     private lateinit var binding: ActivityMadaniCommitteeBinding
-    private lateinit var recyclerAdapter: RecyclerAdapter
+    private lateinit var recyclerAdapter1: RecyclerAdapter1
+    private lateinit var recyclerAdapter2: RecyclerAdapter1
+    private lateinit var recyclerAdapter3: RecyclerAdapter2
+    private lateinit var recyclerAdapter4: RecyclerAdapter2
 
 
     // = = = = = Declare Data Properties = = = = = //
 
-    private lateinit var dataList: List<Data>
+    private lateinit var dataList1: List<MemberInfoData>
     private lateinit var dataList2: List<CommitteeMemberData>
+
+    private var isFirstContentExpanded: Boolean = false
+    private var isSecondContentExpanded: Boolean = false
+    private var isThirdContentExpanded: Boolean = false
+    private var isFourthContentExpanded: Boolean = false
+
+    private val TAG: String = "MadaniCommitteeActivity"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,24 +47,76 @@ class MadaniCommitteeActivity : AppCompatActivity() {
     }
 
     private fun initComponents() {
-        dataList = generateDummyList()
+        binding.toolbar.tvToolbarTitle.text = getString(R.string.madani_committee)
 
-        binding.rvCommittee.layoutManager =
+        dataList1 = generateDummyList1()
+        dataList2 = generateDummyList2()
+
+        // = = = Content 1 RecyclerView Declaration = = = //
+        binding.rvCommittee1.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        recyclerAdapter = RecyclerAdapter(this, dataList)
-        binding.rvCommittee.adapter = recyclerAdapter
+        recyclerAdapter1 = RecyclerAdapter1(this, dataList1)
+        binding.rvCommittee1.adapter = recyclerAdapter1
 
-        recyclerAdapter.onItemClick = {
-            //Todo implementation needed
-        }
+        // = = = Content 2 RecyclerView Declaration = = = //
+        binding.rvCommittee2.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recyclerAdapter2 = RecyclerAdapter1(this, dataList1)
+        binding.rvCommittee2.adapter = recyclerAdapter2
+
+        // = = = Content 3 RecyclerView Declaration = = = //
+        binding.rvCommittee3.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recyclerAdapter3 = RecyclerAdapter2(this, dataList2)
+        binding.rvCommittee3.adapter = recyclerAdapter3
+
+        // = = = Content 4 RecyclerView Declaration = = = //
+        binding.rvCommittee4.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        recyclerAdapter4 = RecyclerAdapter2(this, dataList2)
+        binding.rvCommittee4.adapter = recyclerAdapter4
+
     }
 
     private fun initListeners() {
         binding.toolbar.ivToolbarBack.setOnClickListener { finish() }
+
+        binding.tvCommitteeRank1.setOnClickListener {
+            isFirstContentExpanded = !isFirstContentExpanded
+            binding.rvCommittee1.isVisible = isFirstContentExpanded
+        }
+
+        binding.tvCommitteeRank2.setOnClickListener {
+            isSecondContentExpanded = !isSecondContentExpanded
+            binding.rvCommittee2.isVisible = isSecondContentExpanded
+        }
+
+        binding.tvCommitteeRank3.setOnClickListener {
+            isThirdContentExpanded = !isThirdContentExpanded
+            binding.rvCommittee3.isVisible = isThirdContentExpanded
+        }
+
+        binding.tvCommitteeRank4.setOnClickListener {
+            isFourthContentExpanded = !isFourthContentExpanded
+            binding.rvCommittee4.isVisible = isFourthContentExpanded
+        }
     }
 
-    private fun generateDummyList(): ArrayList<Data> {
-        val dataList = ArrayList<Data>()
+    private fun generateDummyList1(): ArrayList<MemberInfoData> {
+        val dataList = ArrayList<MemberInfoData>()
+
+        dataList1 = ArrayList()
+        dataList1 = dataList1 + MemberInfoData(1, "মোঃ রেজাউল করিম")
+        dataList1 = dataList1 + MemberInfoData(2, "মোঃ রেজাউল করিম")
+        dataList1 = dataList1 + MemberInfoData(3, "মোঃ রেজাউল করিম")
+        dataList1 = dataList1 + MemberInfoData(4, "মোঃ রেজাউল করিম")
+        dataList1 = dataList1 + MemberInfoData(5, "মোঃ রেজাউল করিম")
+
+        return dataList
+    }
+
+    private fun generateDummyList2(): ArrayList<CommitteeMemberData> {
+        val dataList = ArrayList<CommitteeMemberData>()
 
         dataList2 = ArrayList()
         dataList2 = dataList2 + CommitteeMemberData(1, "মোঃ রেজাউল করিম", "01841752600", "2010")
@@ -63,11 +129,6 @@ class MadaniCommitteeActivity : AppCompatActivity() {
         dataList2 = dataList2 + CommitteeMemberData(8, "মোঃ রেজাউল করিম", "01841752600", "2017")
         dataList2 = dataList2 + CommitteeMemberData(9, "মোঃ রেজাউল করিম", "01841752600", "2018")
         dataList2 = dataList2 + CommitteeMemberData(10, "মোঃ রেজাউল করিম", "01841752600", "2019")
-
-        dataList += Data(1, "উপদেষ্টা পর্ষদ", dataList2, false)
-        dataList += Data(1, "মজলিশে শূরা", dataList2, false)
-        dataList += Data(1, "ফুযালা উচ্চপর্ষদ", dataList2, false)
-        dataList += Data(1, "পরিচালনা পর্ষদ", dataList2, false)
 
         return dataList
     }

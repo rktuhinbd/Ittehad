@@ -4,44 +4,37 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.madaninagar.madani.databinding.ItemMawlanaContactBinding
-import com.madaninagar.madani.madani_committee.model.CommitteeMemberData
+import com.madaninagar.madani.databinding.ItemMemberBinding
+import com.madaninagar.madani.madani_committee.model.MemberInfoData
 
-class CommitteeInfoRecyclerAdapter(context: Context, dataSet: List<CommitteeMemberData>) :
-    RecyclerView.Adapter<CommitteeInfoRecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter1(context: Context, dataSet: List<MemberInfoData>) :
+    RecyclerView.Adapter<RecyclerAdapter1.ViewHolder>() {
 
     private var context: Context = context
+    private var dataList: List<MemberInfoData> = dataSet
 
-    private var dataList: List<CommitteeMemberData> = dataSet
+    var onItemClick: ((MemberInfoData) -> Unit)? = null
 
-    var onItemClick: ((CommitteeMemberData) -> Unit)? = null
-
-    class ViewHolder(val binding: ItemMawlanaContactBinding) :
+    class ViewHolder(val binding: ItemMemberBinding) :
         RecyclerView.ViewHolder(binding.root) {}
 
     // Create new views (invoked by the layout manager)
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         // Create a new view, which defines the UI of the list item
         val inflater = LayoutInflater.from(viewGroup.context)
-        val binding = ItemMawlanaContactBinding.inflate(inflater)
+        val binding = ItemMemberBinding.inflate(inflater)
         return ViewHolder(binding)
     }
 
     // Replace the contents of a view (invoked by the layout manager)
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
+
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        holder.binding.tvName.text = dataList[position].name
-        holder.binding.tvYear.text = dataList[position].year
-        holder.binding.tvPhoneNumber.text = dataList[position].phoneNumber
-
-        holder.binding.cardView.setOnClickListener {
-            onItemClick?.invoke(dataList[position])
-        }
+        viewHolder.binding.tvName.text = dataList[position].name
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount() = dataList.size
-
 
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,15 +12,110 @@
             android:id="@+id/toolbar"
             layout="@layout/layout_toolbar_transparent" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvCommittee"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
-            tools:itemCount="4"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/item_committee"
-            android:layout_margin="@dimen/_16dp" />
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCommitteeRank1"
+                style="@style/TextStyleLexendDarkH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="উপদেষ্টা পর্ষদ"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCommittee1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_member" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_marginBottom="@dimen/_4dp"
+                android:background="@color/color_ash_1_D2D7E9" />
+
+            <TextView
+                android:id="@+id/tvCommitteeRank2"
+                style="@style/TextStyleLexendDarkH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="মজলিশে শূরা"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCommittee2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="4"
+                tools:listitem="@layout/item_member" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_marginBottom="@dimen/_4dp"
+                android:background="@color/color_ash_1_D2D7E9" />
+
+            <TextView
+                android:id="@+id/tvCommitteeRank3"
+                style="@style/TextStyleLexendDarkH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ফুযালা উচ্চপর্ষদ"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCommittee3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_mawlana_contact" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1dp"
+                android:layout_marginTop="@dimen/_4dp"
+                android:layout_marginBottom="@dimen/_4dp"
+                android:background="@color/color_ash_1_D2D7E9" />
+
+            <TextView
+                android:id="@+id/tvCommitteeRank4"
+                style="@style/TextStyleLexendDarkH4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="পরিচালনা পর্ষদ"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCommittee4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="5"
+                tools:listitem="@layout/item_mawlana_contact" />
+
+        </LinearLayout>
 
     </RelativeLayout>
 

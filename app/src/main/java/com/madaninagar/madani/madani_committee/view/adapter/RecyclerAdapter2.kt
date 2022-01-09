@@ -9,11 +9,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.madaninagar.madani.databinding.ItemMawlanaContactBinding
 import com.madaninagar.madani.madani_committee.model.CommitteeMemberData
 
-class CommitteeRecyclerAdapter(context: Context, dataSet: List<CommitteeMemberData>) :
-    RecyclerView.Adapter<CommitteeRecyclerAdapter.ViewHolder>() {
+class RecyclerAdapter2(context: Context, dataSet: List<CommitteeMemberData>) :
+    RecyclerView.Adapter<RecyclerAdapter2.ViewHolder>() {
 
-    private var dataList: List<CommitteeMemberData> = dataSet
     private var context: Context = context
+    private var dataList: List<CommitteeMemberData> = dataSet
+
     var onItemClick: ((CommitteeMemberData) -> Unit)? = null
 
     class ViewHolder(val binding: ItemMawlanaContactBinding) :
