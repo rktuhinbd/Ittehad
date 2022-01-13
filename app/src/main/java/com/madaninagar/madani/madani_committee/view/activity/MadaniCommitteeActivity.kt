@@ -2,6 +2,7 @@ package com.madaninagar.madani.madani_committee.view.activity
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -49,15 +50,14 @@ class MadaniCommitteeActivity : AppCompatActivity() {
     private fun initComponents() {
         binding.toolbar.tvToolbarTitle.text = getString(R.string.madani_committee)
 
-        dataList1 = generateDummyList1()
-        dataList2 = generateDummyList2()
+        generateDummyList1()
+        generateDummyList2()
 
         // = = = Content 1 RecyclerView Declaration = = = //
         binding.rvCommittee1.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         recyclerAdapter1 = RecyclerAdapter1(this, dataList1)
         binding.rvCommittee1.adapter = recyclerAdapter1
-
         // = = = Content 2 RecyclerView Declaration = = = //
         binding.rvCommittee2.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
@@ -102,8 +102,8 @@ class MadaniCommitteeActivity : AppCompatActivity() {
         }
     }
 
-    private fun generateDummyList1(): ArrayList<MemberInfoData> {
-        val dataList = ArrayList<MemberInfoData>()
+    private fun generateDummyList1() {
+
 
         dataList1 = ArrayList()
         dataList1 = dataList1 + MemberInfoData(1, "মোঃ রেজাউল করিম")
@@ -112,11 +112,9 @@ class MadaniCommitteeActivity : AppCompatActivity() {
         dataList1 = dataList1 + MemberInfoData(4, "মোঃ রেজাউল করিম")
         dataList1 = dataList1 + MemberInfoData(5, "মোঃ রেজাউল করিম")
 
-        return dataList
     }
 
-    private fun generateDummyList2(): ArrayList<CommitteeMemberData> {
-        val dataList = ArrayList<CommitteeMemberData>()
+    private fun generateDummyList2() {
 
         dataList2 = ArrayList()
         dataList2 = dataList2 + CommitteeMemberData(1, "মোঃ রেজাউল করিম", "01841752600", "2010")
@@ -130,6 +128,5 @@ class MadaniCommitteeActivity : AppCompatActivity() {
         dataList2 = dataList2 + CommitteeMemberData(9, "মোঃ রেজাউল করিম", "01841752600", "2018")
         dataList2 = dataList2 + CommitteeMemberData(10, "মোঃ রেজাউল করিম", "01841752600", "2019")
 
-        return dataList
     }
 }

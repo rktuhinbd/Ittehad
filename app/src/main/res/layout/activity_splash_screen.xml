@@ -6,25 +6,26 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_blue_grey_2_263F4A"
+        android:background="@color/activity_bg_color"
         style="@style/LayoutStyle"
         tools:context=".splash.SplashScreenActivity">
         <androidx.cardview.widget.CardView
             android:id="@+id/cardIndex"
-            android:layout_width="@dimen/_164dp"
-            android:layout_height="@dimen/_164dp"
-            app:cardCornerRadius="@dimen/_82dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:cardCornerRadius="@dimen/_100dp"
             app:cardElevation="10dp"
-            app:cardBackgroundColor="@color/teal_700"
+            app:cardBackgroundColor="@color/white"
             android:layout_centerInParent="true">
 
-            <TextView
+            <ImageView
                 style="@style/TextStyleLexendDarkH5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_centerInParent="true"
-                android:text="@string/app_name"
+                android:src="@drawable/ic_launcher"
                 tools:ignore="HardcodedText"
+                android:scaleType="fitCenter"
                 android:textColor="@color/white"
                 android:layout_gravity="center"/>
 
