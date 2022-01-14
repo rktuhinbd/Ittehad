@@ -5,15 +5,15 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madaninagar.madani.R
-import com.madaninagar.madani.abnaye_rahmania.view.activity.AbnayeRahmaniaActivity
 import com.madaninagar.madani.asatijaye_keram.view.AsatijayeKeramActivity
+import com.madaninagar.madani.collect_information.CollectInformationActivity
 import com.madaninagar.madani.databinding.ActivityHomeBinding
-import com.madaninagar.madani.dimashik_madani.DimashikmadaniActivity
 import com.madaninagar.madani.home.model.Data
 import com.madaninagar.madani.home.view.adapter.RecyclerAdapter
-import com.madaninagar.madani.jamat_protinidhee.view.JamatProtinidheeActivity
-import com.madaninagar.madani.madani_committee.view.activity.MadaniCommitteeActivity
-import com.madaninagar.madani.update_information.UpdateInformationActivity
+import com.madaninagar.madani.shura_committee.view.activity.ShuraCommitteeActivity
+import com.madaninagar.madani.publication.view.PublicationActivity
+import com.madaninagar.madani.fujala_wa_abna.view.FujalaWaAbnaActivity
+import com.madaninagar.madani.sonwari_jimmadar.view.activity.SonwariJimmadarActivity
 
 class HomeActivity : AppCompatActivity() {
 
@@ -21,7 +21,6 @@ class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
     private lateinit var recyclerAdapter: RecyclerAdapter
-
 
     // = = = = = Declare Data Properties = = = = = //
 
@@ -51,19 +50,25 @@ class HomeActivity : AppCompatActivity() {
                     startActivity(Intent(this@HomeActivity, AsatijayeKeramActivity::class.java))
                 }
                 2 -> {
-                    startActivity(Intent(this@HomeActivity, AbnayeRahmaniaActivity::class.java))
+                    startActivity(Intent(this@HomeActivity, SonwariJimmadarActivity::class.java))
                 }
                 3 -> {
-                    startActivity(Intent(this@HomeActivity, MadaniCommitteeActivity::class.java))
+                    startActivity(Intent(this@HomeActivity, FujalaWaAbnaActivity::class.java))
                 }
                 4 -> {
-                    startActivity(Intent(this@HomeActivity, JamatProtinidheeActivity::class.java))
+                    startActivity(Intent(this@HomeActivity, ShuraCommitteeActivity::class.java))
                 }
                 5 -> {
-                    startActivity(Intent(this@HomeActivity, UpdateInformationActivity::class.java))
+                    startActivity(Intent(this@HomeActivity, CollectInformationActivity::class.java))
                 }
                 6 -> {
-                    startActivity(Intent(this@HomeActivity, DimashikmadaniActivity::class.java))
+                    startActivity(Intent(this@HomeActivity, PublicationActivity::class.java))
+                }
+                7 -> {
+                    startActivity(Intent(this@HomeActivity, PublicationActivity::class.java))
+                }
+                8 -> {
+                    startActivity(Intent(this@HomeActivity, PublicationActivity::class.java))
                 }
             }
         }
@@ -73,11 +78,13 @@ class HomeActivity : AppCompatActivity() {
         val dataList = ArrayList<Data>()
 
         dataList += Data(1, getString(R.string.asatijaye_keram), R.drawable.ic_king_crown)
-        dataList += Data(2, getString(R.string.abnaye_rahmania), R.drawable.ic_king_crown)
-        dataList += Data(3, getString(R.string.madani_committee), R.drawable.ic_king_crown)
-        dataList += Data(4, getString(R.string.jamat_protinidhee), R.drawable.ic_king_crown)
-        dataList += Data(5, getString(R.string.update_information), R.drawable.ic_king_crown)
-        dataList += Data(6, getString(R.string.di_mashik_madani), R.drawable.ic_king_crown)
+        dataList += Data(2, getString(R.string.sonwari_jimmadar), R.drawable.ic_king_crown)
+        dataList += Data(3, getString(R.string.fujala_wa_abna), R.drawable.ic_king_crown)
+        dataList += Data(4, getString(R.string.shura_and_committee), R.drawable.ic_king_crown)
+        dataList += Data(5, getString(R.string.collect_information), R.drawable.ic_king_crown)
+        dataList += Data(6, getString(R.string.elan), R.drawable.ic_king_crown)
+        dataList += Data(7, getString(R.string.publication), R.drawable.ic_king_crown)
+        dataList += Data(8, getString(R.string.contact), R.drawable.ic_king_crown)
 
         return dataList
     }

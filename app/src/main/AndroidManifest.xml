@@ -29,32 +29,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Main">
         <activity
-            android:name=".abnaye_rahmania.view.activity.AbnayeRahmaniaYearActivity"
+            android:name=".sonwari_jimmadar.view.activity.SonwariJimmadarYearActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".dimashik_madani.DimashikmadaniActivity"
+            android:name=".publication.view.PublicationActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".update_information.UpdateInformationActivity"
+            android:name=".collect_information.CollectInformationActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".jamat_protinidhee.view.JamatProtinidheeActivity"
+            android:name=".fujala_wa_abna.view.FujalaWaAbnaActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".madani_committee.view.activity.MadaniCommitteeActivity"
+            android:name=".shura_committee.view.activity.ShuraCommitteeActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".abnaye_rahmania.view.activity.AbnayeRahmaniaActivity"
+            android:name=".sonwari_jimmadar.view.activity.SonwariJimmadarActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />

@@ -1,18 +1,18 @@
-package com.madaninagar.madani.asatijaye_keram.view
+package com.madaninagar.madani.fujala_wa_abna.view
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madaninagar.madani.R
-import com.madaninagar.madani.asatijaye_keram.model.Data
-import com.madaninagar.madani.databinding.ActivityAsatijayeKeramBinding
+import com.madaninagar.madani.databinding.ActivityFujalaWaAbnaBinding
+import com.madaninagar.madani.fujala_wa_abna.model.Data
 
-class AsatijayeKeramActivity : AppCompatActivity() {
+class FujalaWaAbnaActivity : AppCompatActivity() {
 
     // = = = = = Declare View Properties = = = = = //
 
-    private lateinit var binding: ActivityAsatijayeKeramBinding
+    private lateinit var binding: ActivityFujalaWaAbnaBinding
     private lateinit var recyclerAdapter: RecyclerAdapter
 
     // = = = = = Declare Data Properties = = = = = //
@@ -22,16 +22,17 @@ class AsatijayeKeramActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAsatijayeKeramBinding.inflate(layoutInflater)
+        binding = ActivityFujalaWaAbnaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initComponents()
         initListeners()
+        initComponents()
 
     }
 
     private fun initComponents() {
-        binding.toolbar.tvToolbarTitle.text = getString(R.string.asatijaye_keram)
+
+        binding.toolbar.tvToolbarTitle.text = getString(R.string.shura_and_committee)
 
         dataList = generateDummyList()
 
@@ -64,89 +65,49 @@ class AsatijayeKeramActivity : AppCompatActivity() {
             1,
             "মোঃ রেজাউল করিম",
             "01841752600",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
+            "2001"
         )
         dataList += Data(
             2,
             "মোঃ রেজাউল করিম",
             "01841752600",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
+            "2001"
         )
         dataList += Data(
             3,
             "মোঃ রেজাউল করিম",
             "01841752600",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
+            "2001"
         )
         dataList += Data(
             4,
             "মোঃ রেজাউল করিম",
             "01841752600",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
+            "2001"
         )
         dataList += Data(
             5,
             "মোঃ রেজাউল করিম",
             "01841752600",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
+            "2001"
         )
         dataList += Data(
             6,
             "মোঃ রেজাউল করিম",
             "01841752600",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
+            "2001"
         )
         dataList += Data(
             7,
             "মোঃ রেজাউল করিম",
             "01841752600",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
+            "2001"
         )
         dataList += Data(
             8,
             "মোঃ রেজাউল করিম",
             "01841752600",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
+            "2001"
         )
 
         return dataList

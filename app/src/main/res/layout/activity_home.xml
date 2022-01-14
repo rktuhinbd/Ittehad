@@ -49,18 +49,20 @@
                 android:textStyle="bold" />
 
         </RelativeLayout>
+
         <View
             android:id="@+id/topView"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:layout_below="@+id/topBar"
             android:background="@drawable/bg_see_more_gradient"
-            android:visibility="gone"
-            />
+            android:visibility="gone" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomText"
             android:layout_below="@+id/topView"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="@dimen/_16dp"
@@ -70,21 +72,19 @@
             android:gravity="center"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:itemCount="6"
-            tools:listitem="@layout/item_home"
-            android:layout_above="@+id/bottomText"/>
+            tools:listitem="@layout/item_home" />
 
         <TextView
             android:id="@+id/bottomText"
             style="@style/TextStyleLexendWhiteH7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="-5dp"
-            android:padding="3dp"
             android:layout_alignParentBottom="true"
+            android:padding="@dimen/_8dp"
+            android:layout_marginStart="-5dp"
+            android:background="@drawable/bg_bottom_gradient"
             android:text="@string/home_page_message"
-            android:textAlignment="center"
-
-            android:background="@drawable/bg_bottom_gradient"/>
+            android:textAlignment="center" />
 
     </RelativeLayout>
 

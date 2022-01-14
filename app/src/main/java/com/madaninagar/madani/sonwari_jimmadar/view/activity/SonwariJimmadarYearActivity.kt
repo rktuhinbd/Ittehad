@@ -1,43 +1,49 @@
-package com.madaninagar.madani.asatijaye_keram.view
+package com.madaninagar.madani.sonwari_jimmadar.view.activity
 
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.madaninagar.madani.R
-import com.madaninagar.madani.asatijaye_keram.model.Data
-import com.madaninagar.madani.databinding.ActivityAsatijayeKeramBinding
+import com.madaninagar.madani.databinding.ActivitySonwariJimmadarYearBinding
+import com.madaninagar.madani.sonwari_jimmadar.model.YearsData
+import com.madaninagar.madani.sonwari_jimmadar.view.adapter.YearsRecyclerAdapter
 
-class AsatijayeKeramActivity : AppCompatActivity() {
+class SonwariJimmadarYearActivity : AppCompatActivity() {
 
     // = = = = = Declare View Properties = = = = = //
 
-    private lateinit var binding: ActivityAsatijayeKeramBinding
-    private lateinit var recyclerAdapter: RecyclerAdapter
+    private lateinit var binding: ActivitySonwariJimmadarYearBinding
+    private lateinit var recyclerAdapter: YearsRecyclerAdapter
+
 
     // = = = = = Declare Data Properties = = = = = //
 
-    private lateinit var dataList: List<Data>
+    private lateinit var dataList: List<YearsData>
+    private var year: String = ""
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAsatijayeKeramBinding.inflate(layoutInflater)
+        binding = ActivitySonwariJimmadarYearBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initComponents()
+        getExtras()
         initListeners()
+        initComponents()
+    }
 
+    private fun getExtras() {
+        year = intent.getStringExtra("year")!!
     }
 
     private fun initComponents() {
-        binding.toolbar.tvToolbarTitle.text = getString(R.string.asatijaye_keram)
+        binding.toolbar.tvToolbarTitle.text = year
 
         dataList = generateDummyList()
 
         binding.rvTest.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        recyclerAdapter = RecyclerAdapter(this, dataList)
+        recyclerAdapter = YearsRecyclerAdapter(this, dataList)
         binding.rvTest.adapter = recyclerAdapter
     }
 
@@ -57,10 +63,10 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         }
     }
 
-    private fun generateDummyList(): ArrayList<Data> {
-        val dataList = ArrayList<Data>()
+    private fun generateDummyList(): ArrayList<YearsData> {
+        val dataList = ArrayList<YearsData>()
 
-        dataList += Data(
+        dataList += YearsData(
             1,
             "মোঃ রেজাউল করিম",
             "01841752600",
@@ -71,7 +77,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
             "কুমিল্লা",
             false
         )
-        dataList += Data(
+        dataList += YearsData(
             2,
             "মোঃ রেজাউল করিম",
             "01841752600",
@@ -82,7 +88,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
             "কুমিল্লা",
             false
         )
-        dataList += Data(
+        dataList += YearsData(
             3,
             "মোঃ রেজাউল করিম",
             "01841752600",
@@ -93,7 +99,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
             "কুমিল্লা",
             false
         )
-        dataList += Data(
+        dataList += YearsData(
             4,
             "মোঃ রেজাউল করিম",
             "01841752600",
@@ -104,7 +110,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
             "কুমিল্লা",
             false
         )
-        dataList += Data(
+        dataList += YearsData(
             5,
             "মোঃ রেজাউল করিম",
             "01841752600",
@@ -115,7 +121,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
             "কুমিল্লা",
             false
         )
-        dataList += Data(
+        dataList += YearsData(
             6,
             "মোঃ রেজাউল করিম",
             "01841752600",
@@ -126,7 +132,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
             "কুমিল্লা",
             false
         )
-        dataList += Data(
+        dataList += YearsData(
             7,
             "মোঃ রেজাউল করিম",
             "01841752600",
@@ -137,7 +143,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
             "কুমিল্লা",
             false
         )
-        dataList += Data(
+        dataList += YearsData(
             8,
             "মোঃ রেজাউল করিম",
             "01841752600",
@@ -151,4 +157,5 @@ class AsatijayeKeramActivity : AppCompatActivity() {
 
         return dataList
     }
+
 }
