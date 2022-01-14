@@ -29,7 +29,6 @@ class ShuraCommitteeActivity : AppCompatActivity() {
     private var isFirstContentExpanded: Boolean = false
     private var isSecondContentExpanded: Boolean = false
     private var isThirdContentExpanded: Boolean = false
-    private var isFourthContentExpanded: Boolean = false
 
     private val TAG: String = "MadaniCommitteeActivity"
 
