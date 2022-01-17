@@ -32,7 +32,7 @@ class FujalaWaAbnaActivity : AppCompatActivity() {
 
     private fun initComponents() {
 
-        binding.toolbar.tvToolbarTitle.text = getString(R.string.shura_and_committee)
+        binding.toolbar.tvToolbarTitle.text = getString(R.string.fujala_wa_abna)
 
         dataList = generateDummyList()
 

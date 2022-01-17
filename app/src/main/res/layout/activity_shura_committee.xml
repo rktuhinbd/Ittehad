@@ -35,7 +35,7 @@
                     android:text="উপদেষ্টা পর্ষদ"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_30dp"
+                    android:textSize="@dimen/text_size_h2"
                     tools:ignore="HardcodedText" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -62,7 +62,7 @@
                     android:text="শুরা-কমিটি"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_30dp"
+                    android:textSize="@dimen/text_size_h2"
                     tools:ignore="HardcodedText" />
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -89,7 +89,7 @@
                     android:text="সাব-কমিটি"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_30dp"
+                    android:textSize="@dimen/text_size_h2"
                     tools:ignore="HardcodedText" />
 
                 <androidx.recyclerview.widget.RecyclerView

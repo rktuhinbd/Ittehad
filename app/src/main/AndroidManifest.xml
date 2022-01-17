@@ -29,6 +29,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Main">
         <activity
+            android:name=".contact.ContactActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
             android:name=".sonwari_jimmadar.view.activity.SonwariJimmadarYearActivity"
             android:exported="false"
             android:screenOrientation="portrait"

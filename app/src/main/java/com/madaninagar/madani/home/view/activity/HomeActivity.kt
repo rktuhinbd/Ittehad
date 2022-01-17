@@ -1,18 +1,17 @@
 package com.madaninagar.madani.home.view.activity
 
 import android.content.Intent
+import android.opengl.Visibility
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.madaninagar.madani.R
+import androidx.core.view.isVisible
 import com.madaninagar.madani.asatijaye_keram.view.AsatijayeKeramActivity
 import com.madaninagar.madani.collect_information.CollectInformationActivity
+import com.madaninagar.madani.contact.ContactActivity
 import com.madaninagar.madani.databinding.ActivityHomeBinding
-import com.madaninagar.madani.home.model.Data
-import com.madaninagar.madani.home.view.adapter.RecyclerAdapter
-import com.madaninagar.madani.shura_committee.view.activity.ShuraCommitteeActivity
-import com.madaninagar.madani.publication.view.PublicationActivity
 import com.madaninagar.madani.fujala_wa_abna.view.FujalaWaAbnaActivity
+import com.madaninagar.madani.publication.view.PublicationActivity
+import com.madaninagar.madani.shura_committee.view.activity.ShuraCommitteeActivity
 import com.madaninagar.madani.sonwari_jimmadar.view.activity.SonwariJimmadarActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -20,11 +19,10 @@ class HomeActivity : AppCompatActivity() {
     // = = = = = Declare View Properties = = = = = //
 
     private lateinit var binding: ActivityHomeBinding
-    private lateinit var recyclerAdapter: RecyclerAdapter
 
     // = = = = = Declare Data Properties = = = = = //
 
-    private lateinit var dataList: List<Data>
+    private var isCommitteeExpanded: Boolean = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,55 +35,50 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun initComponents() {
-        dataList = generateDummyList()
 
-        binding.rvHome.layoutManager =
-            LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        recyclerAdapter = RecyclerAdapter(dataList)
-        binding.rvHome.adapter = recyclerAdapter
-
-        recyclerAdapter.onItemClick = {
-            when (it.id) {
-                1 -> {
-                    startActivity(Intent(this@HomeActivity, AsatijayeKeramActivity::class.java))
-                }
-                2 -> {
-                    startActivity(Intent(this@HomeActivity, SonwariJimmadarActivity::class.java))
-                }
-                3 -> {
-                    startActivity(Intent(this@HomeActivity, FujalaWaAbnaActivity::class.java))
-                }
-                4 -> {
-                    startActivity(Intent(this@HomeActivity, ShuraCommitteeActivity::class.java))
-                }
-                5 -> {
-                    startActivity(Intent(this@HomeActivity, CollectInformationActivity::class.java))
-                }
-                6 -> {
-                    startActivity(Intent(this@HomeActivity, PublicationActivity::class.java))
-                }
-                7 -> {
-                    startActivity(Intent(this@HomeActivity, PublicationActivity::class.java))
-                }
-                8 -> {
-                    startActivity(Intent(this@HomeActivity, PublicationActivity::class.java))
-                }
-            }
+        binding.btnAsatijayeKeram.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, AsatijayeKeramActivity::class.java))
         }
-    }
 
-    private fun generateDummyList(): ArrayList<Data> {
-        val dataList = ArrayList<Data>()
+        binding.btnSonwariJimmadar.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, SonwariJimmadarActivity::class.java))
+        }
 
-        dataList += Data(1, getString(R.string.asatijaye_keram), R.drawable.ic_king_crown)
-        dataList += Data(2, getString(R.string.sonwari_jimmadar), R.drawable.ic_king_crown)
-        dataList += Data(3, getString(R.string.fujala_wa_abna), R.drawable.ic_king_crown)
-        dataList += Data(4, getString(R.string.shura_and_committee), R.drawable.ic_king_crown)
-        dataList += Data(5, getString(R.string.collect_information), R.drawable.ic_king_crown)
-        dataList += Data(6, getString(R.string.elan), R.drawable.ic_king_crown)
-        dataList += Data(7, getString(R.string.publication), R.drawable.ic_king_crown)
-        dataList += Data(8, getString(R.string.contact), R.drawable.ic_king_crown)
+        binding.btnFujalaWaAbna.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, FujalaWaAbnaActivity::class.java))
+        }
 
-        return dataList
+        binding.btnShuraCommittee.setOnClickListener {
+            isCommitteeExpanded = !isCommitteeExpanded
+            binding.layoutCommittee.isVisible = isCommitteeExpanded
+        }
+
+        binding.tvCommitteeRank1.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, ShuraCommitteeActivity::class.java))
+        }
+
+        binding.tvCommitteeRank2.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, ShuraCommitteeActivity::class.java))
+        }
+
+        binding.tvCommitteeRank3.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, ShuraCommitteeActivity::class.java))
+        }
+
+        binding.btnInformation.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, CollectInformationActivity::class.java))
+        }
+
+        binding.btnElan.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, SonwariJimmadarActivity::class.java))
+        }
+
+        binding.btnPublication.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, PublicationActivity::class.java))
+        }
+
+        binding.btnContact.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, ContactActivity::class.java))
+        }
     }
 }

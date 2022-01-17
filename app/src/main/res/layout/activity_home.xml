@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
@@ -58,33 +57,140 @@
             android:background="@drawable/bg_see_more_gradient"
             android:visibility="gone" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvHome"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/bottomText"
             android:layout_below="@+id/topView"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginStart="@dimen/_20dp"
             android:layout_marginTop="@dimen/_24dp"
-            android:layout_marginEnd="@dimen/_16dp"
-            android:layout_marginBottom="@dimen/_12dp"
-            android:gravity="center"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:itemCount="6"
-            tools:listitem="@layout/item_home" />
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_12dp">
 
-        <TextView
-            android:id="@+id/bottomText"
-            style="@style/TextStyleLexendWhiteH7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:padding="@dimen/_8dp"
-            android:layout_marginStart="-5dp"
-            android:background="@drawable/bg_bottom_gradient"
-            android:text="@string/home_page_message"
-            android:textAlignment="center" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAsatijayeKeram"
+                    style="@style/ButtonAppTheme.HomeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:text="@string/asatijaye_keram" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSonwariJimmadar"
+                    style="@style/ButtonAppTheme.HomeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:text="@string/sonwari_jimmadar" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnFujalaWaAbna"
+                    style="@style/ButtonAppTheme.HomeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:text="@string/fujala_wa_abna" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnShuraCommittee"
+                    style="@style/ButtonAppTheme.HomeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shura_and_committee" />
+
+                <LinearLayout
+                    android:id="@+id/layoutCommittee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvCommitteeRank1"
+                        style="@style/TextStyleLexendDarkH5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="উপদেষ্টা পর্ষদ"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:layout_marginBottom="@dimen/_4dp"
+                        android:background="@color/color_ash_1_D2D7E9" />
+
+                    <TextView
+                        android:id="@+id/tvCommitteeRank2"
+                        style="@style/TextStyleLexendDarkH5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="শুরা-কমিটি"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:layout_marginBottom="@dimen/_4dp"
+                        android:background="@color/color_ash_1_D2D7E9" />
+
+                    <TextView
+                        android:id="@+id/tvCommitteeRank3"
+                        style="@style/TextStyleLexendDarkH5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="সাব-কমিটি"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnInformation"
+                    style="@style/ButtonAppTheme.HomeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:text="@string/collect_information" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnElan"
+                    style="@style/ButtonAppTheme.HomeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:text="@string/elan" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPublication"
+                    style="@style/ButtonAppTheme.HomeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:text="@string/publication" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnContact"
+                    style="@style/ButtonAppTheme.HomeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:text="@string/contact" />
+
+            </LinearLayout>
+
+        </ScrollView>
 
     </RelativeLayout>
 

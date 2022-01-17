@@ -72,6 +72,19 @@
         <item name="android:textColor">@color/color_white</item>
     </style>
 
+    <!-- Default Button Style 3 -->
+    <style name="ButtonAppTheme.HomeItem" parent="android:Widget.Button">
+        <item name="android:background">@drawable/shape_rounded_bg_white_8</item>
+        <item name="android:paddingStart">@dimen/padding_12dp</item>
+        <item name="android:paddingEnd">@dimen/padding_12dp</item>
+        <item name="android:textSize">@dimen/button_text_17sp</item>
+        <item name="android:drawableStart">@drawable/ic_king_crown</item>
+        <item name="android:height">@dimen/default_button_height_large</item>
+        <item name="android:fontFamily">@font/lexend_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/color_teal_5_0490A1</item>
+    </style>
+
 
     <!-- Button with tick Style -->
     <style name="ButtonAppTheme.WithOutTick" parent="android:Widget.Button">
