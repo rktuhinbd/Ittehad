@@ -63,7 +63,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         dataList += Data(
             1,
             "মোঃ রেজাউল করিম",
-            "01841752600",
+            "01011001100",
             "তোফাজ্জল হোসেনের বাড়ি",
             "রহিমপুর",
             "মুরাদনগর",
@@ -74,7 +74,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         dataList += Data(
             2,
             "মোঃ রেজাউল করিম",
-            "01841752600",
+            "01011001100",
             "তোফাজ্জল হোসেনের বাড়ি",
             "রহিমপুর",
             "মুরাদনগর",
@@ -85,7 +85,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         dataList += Data(
             3,
             "মোঃ রেজাউল করিম",
-            "01841752600",
+            "01011001100",
             "তোফাজ্জল হোসেনের বাড়ি",
             "রহিমপুর",
             "মুরাদনগর",
@@ -96,7 +96,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         dataList += Data(
             4,
             "মোঃ রেজাউল করিম",
-            "01841752600",
+            "01011001100",
             "তোফাজ্জল হোসেনের বাড়ি",
             "রহিমপুর",
             "মুরাদনগর",
@@ -107,7 +107,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         dataList += Data(
             5,
             "মোঃ রেজাউল করিম",
-            "01841752600",
+            "01011001100",
             "তোফাজ্জল হোসেনের বাড়ি",
             "রহিমপুর",
             "মুরাদনগর",
@@ -118,7 +118,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         dataList += Data(
             6,
             "মোঃ রেজাউল করিম",
-            "01841752600",
+            "01011001100",
             "তোফাজ্জল হোসেনের বাড়ি",
             "রহিমপুর",
             "মুরাদনগর",
@@ -129,7 +129,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         dataList += Data(
             7,
             "মোঃ রেজাউল করিম",
-            "01841752600",
+            "01011001100",
             "তোফাজ্জল হোসেনের বাড়ি",
             "রহিমপুর",
             "মুরাদনগর",
@@ -140,7 +140,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
         dataList += Data(
             8,
             "মোঃ রেজাউল করিম",
-            "01841752600",
+            "01011001100",
             "তোফাজ্জল হোসেনের বাড়ি",
             "রহিমপুর",
             "মুরাদনগর",

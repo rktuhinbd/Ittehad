@@ -101,16 +101,16 @@ class ShuraCommitteeActivity : AppCompatActivity() {
     private fun generateDummyList2() {
 
         dataList2 = ArrayList()
-        dataList2 = dataList2 + CommitteeMemberData(1, "মোঃ রেজাউল করিম", "01841752600", "2010")
-        dataList2 = dataList2 + CommitteeMemberData(2, "মোঃ রেজাউল করিম", "01841752600", "2011")
-        dataList2 = dataList2 + CommitteeMemberData(3, "মোঃ রেজাউল করিম", "01841752600", "2012")
-        dataList2 = dataList2 + CommitteeMemberData(4, "মোঃ রেজাউল করিম", "01841752600", "2013")
-        dataList2 = dataList2 + CommitteeMemberData(5, "মোঃ রেজাউল করিম", "01841752600", "2014")
-        dataList2 = dataList2 + CommitteeMemberData(6, "মোঃ রেজাউল করিম", "01841752600", "2015")
-        dataList2 = dataList2 + CommitteeMemberData(7, "মোঃ রেজাউল করিম", "01841752600", "2016")
-        dataList2 = dataList2 + CommitteeMemberData(8, "মোঃ রেজাউল করিম", "01841752600", "2017")
-        dataList2 = dataList2 + CommitteeMemberData(9, "মোঃ রেজাউল করিম", "01841752600", "2018")
-        dataList2 = dataList2 + CommitteeMemberData(10, "মোঃ রেজাউল করিম", "01841752600", "2019")
+        dataList2 = dataList2 + CommitteeMemberData(1, "মোঃ রেজাউল করিম", "01011001100", "2010")
+        dataList2 = dataList2 + CommitteeMemberData(2, "মোঃ রেজাউল করিম", "01011001100", "2011")
+        dataList2 = dataList2 + CommitteeMemberData(3, "মোঃ রেজাউল করিম", "01011001100", "2012")
+        dataList2 = dataList2 + CommitteeMemberData(4, "মোঃ রেজাউল করিম", "01011001100", "2013")
+        dataList2 = dataList2 + CommitteeMemberData(5, "মোঃ রেজাউল করিম", "01011001100", "2014")
+        dataList2 = dataList2 + CommitteeMemberData(6, "মোঃ রেজাউল করিম", "01011001100", "2015")
+        dataList2 = dataList2 + CommitteeMemberData(7, "মোঃ রেজাউল করিম", "01011001100", "2016")
+        dataList2 = dataList2 + CommitteeMemberData(8, "মোঃ রেজাউল করিম", "01011001100", "2017")
+        dataList2 = dataList2 + CommitteeMemberData(9, "মোঃ রেজাউল করিম", "01011001100", "2018")
+        dataList2 = dataList2 + CommitteeMemberData(10, "মোঃ রেজাউল করিম", "01011001100", "2019")
 
     }
 }
