@@ -5,6 +5,9 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madaninagar.madani.R
+import com.madaninagar.madani.data_store.DataStore.phoneNumber
+import com.madaninagar.madani.data_store.DataStore.studentNames
+import com.madaninagar.madani.data_store.DataStore.years
 import com.madaninagar.madani.databinding.ActivityFujalaWaAbnaBinding
 import com.madaninagar.madani.fujala_wa_abna.model.Data
 
@@ -25,17 +28,28 @@ class FujalaWaAbnaActivity : AppCompatActivity() {
         binding = ActivityFujalaWaAbnaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initData()
         initListeners()
         initComponents()
 
     }
 
+    private fun initData() {
+
+        dataList = ArrayList()
+
+        for (i in 0..514) {
+            dataList += Data(
+                studentNames[i],
+                phoneNumber[i],
+                years[i]
+            )
+        }
+    }
+
     private fun initComponents() {
 
         binding.toolbar.tvToolbarTitle.text = getString(R.string.fujala_wa_abna)
-
-        dataList = generateDummyList()
-
         binding.rvTest.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         recyclerAdapter = RecyclerAdapter(this, dataList)
@@ -56,60 +70,5 @@ class FujalaWaAbnaActivity : AppCompatActivity() {
             binding.toolbar.layoutSearch.visibility = View.GONE
             binding.toolbar.layoutTitle.visibility = View.VISIBLE
         }
-    }
-
-    private fun generateDummyList(): ArrayList<Data> {
-        val dataList = ArrayList<Data>()
-
-        dataList += Data(
-            1,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "2001"
-        )
-        dataList += Data(
-            2,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "2001"
-        )
-        dataList += Data(
-            3,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "2001"
-        )
-        dataList += Data(
-            4,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "2001"
-        )
-        dataList += Data(
-            5,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "2001"
-        )
-        dataList += Data(
-            6,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "2001"
-        )
-        dataList += Data(
-            7,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "2001"
-        )
-        dataList += Data(
-            8,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "2001"
-        )
-
-        return dataList
     }
 }

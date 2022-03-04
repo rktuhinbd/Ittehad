@@ -4,15 +4,14 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.madaninagar.madani.sonwari_jimmadar.model.Data
 import com.madaninagar.madani.databinding.ItemYearsBinding
 
-class RecyclerAdapter(context: Context, dataSet: List<Data>) :
+class RecyclerAdapter(context: Context, dataSet: List<String>) :
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    private var dataList: List<Data> = dataSet
+    private var dataList: List<String> = dataSet
     private var context: Context = context
-    var onItemClick: ((Data) -> Unit)? = null
+    var onItemClick: ((String) -> Unit)? = null
 
     class ViewHolder(val binding: ItemYearsBinding) :
         RecyclerView.ViewHolder(binding.root) {}
@@ -30,7 +29,7 @@ class RecyclerAdapter(context: Context, dataSet: List<Data>) :
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.binding.tvYear.text = dataList[position].year
+        viewHolder.binding.tvYear.text = dataList[position]
 
         viewHolder.binding.cardView.setOnClickListener {
 

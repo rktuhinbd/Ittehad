@@ -1,7 +1,6 @@
 package com.madaninagar.madani.asatijaye_keram.model
 
 data class Data(
-    val id: Int,
     val name: String,
     val phone: String,
     val address: String,

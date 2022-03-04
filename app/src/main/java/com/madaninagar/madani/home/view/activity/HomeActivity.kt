@@ -1,7 +1,6 @@
 package com.madaninagar.madani.home.view.activity
 
 import android.content.Intent
-import android.opengl.Visibility
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +14,9 @@ import com.madaninagar.madani.fujala_wa_abna.view.FujalaWaAbnaActivity
 import com.madaninagar.madani.publication.view.PublicationActivity
 import com.madaninagar.madani.shura_committee.view.activity.ShuraCommitteeActivity
 import com.madaninagar.madani.sonwari_jimmadar.view.activity.SonwariJimmadarActivity
+
 const val TAG = "tag-tag"
+
 class HomeActivity : AppCompatActivity() {
 
     // = = = = = Declare View Properties = = = = = //
@@ -34,17 +35,17 @@ class HomeActivity : AppCompatActivity() {
 
         initComponents()
 
-        Log.d(TAG, "onCreate:name "+ DataStore.studentNames.size)
-        Log.d(TAG, "onCreate:f name "+ DataStore.studentFathersName.size)
-        Log.d(TAG, "onCreate:c num "+ DataStore.phoneNumber.size)
-        Log.d(TAG, "onCreate: vc "+ DataStore.villageCurrent.size)
-        Log.d(TAG, "onCreate: vo  "+ DataStore.villageOriginal.size)
-        Log.d(TAG, "onCreate: po  "+ DataStore.postOriginal.size)
-        Log.d(TAG, "onCreate: pc  "+ DataStore.postCurrent.size)
-        Log.d(TAG, "onCreate: to  "+ DataStore.thanaCurrent.size)
-        Log.d(TAG, "onCreate: tc  "+ DataStore.thanaOriginal.size)
-        Log.d(TAG, "onCreate: zo  "+ DataStore.zilaOriginal.size)
-        Log.d(TAG, "onCreate: zc  "+ DataStore.zilaCurrent.size)
+        Log.d(TAG, "onCreate: name " + DataStore.studentNames.size)
+        Log.d(TAG, "onCreate: f name " + DataStore.studentFathersName.size)
+        Log.d(TAG, "onCreate: c num " + DataStore.phoneNumber.size)
+        Log.d(TAG, "onCreate: vc " + DataStore.villageCurrent.size)
+        Log.d(TAG, "onCreate: vo  " + DataStore.villageOriginal.size)
+        Log.d(TAG, "onCreate: po  " + DataStore.postOriginal.size)
+        Log.d(TAG, "onCreate: pc  " + DataStore.postCurrent.size)
+        Log.d(TAG, "onCreate: to  " + DataStore.thanaCurrent.size)
+        Log.d(TAG, "onCreate: tc  " + DataStore.thanaOriginal.size)
+        Log.d(TAG, "onCreate: zo  " + DataStore.zilaOriginal.size)
+        Log.d(TAG, "onCreate: zc  " + DataStore.zilaCurrent.size)
 
     }
 

@@ -1,6 +1,7 @@
 package com.madaninagar.madani.data_store
 
 object DataStore {
+
     val ostadGonNameList = mapOf(
         "মাওলানা ফয়জুল্লাহ দা. বা. (মুহতামিম)" to
                 "০১৭১২-৯৪৪০৫০",
@@ -1196,6 +1197,7 @@ object DataStore {
         "ফজলুল করিম",
 
         )
+
     val studentFathersName = arrayOf(
         "আবদুল আজিজ খন্দকার",
         "মৌলভী আবদুল কাদের ",
@@ -2239,6 +2241,7 @@ object DataStore {
         "বালুসাইর",
         "পূর্ব হাজীপুর",
     )
+
     val postOriginal = arrayOf(
         "উওর চড়াইল",
         "হাসনাবাদ",
@@ -2760,6 +2763,7 @@ object DataStore {
         "পূর্ব হাজীপুর",
 
         )
+
     val thanaOriginal = arrayOf(
         "কাঠালিয়া",
         "দোহার",
@@ -4318,6 +4322,7 @@ object DataStore {
         "Moddho keramatpur",
 
         )
+
     val postCurrent = arrayOf(
         "সানারপাড়",
         "সানাড়পাড়",
@@ -6912,7 +6917,7 @@ object DataStore {
 
         )
 
-    val job  = arrayOf(
+    val job = arrayOf(
         "আপনার বর্তমান পেশা কী?",
         "শিক্ষক, খতীব, ইমাম",
         "শিক্ষক",
@@ -7431,6 +7436,7 @@ object DataStore {
         "শিক্ষক",
 
         )
+
     val jobInstitute = arrayOf(
         "বর্তমানে কোন প্রতিষ্ঠানে / মসজিদে / অফিসে / ব্যবসায় কর্মরত আছেন?",
         "মাদানী নগর মাদরাসা",
