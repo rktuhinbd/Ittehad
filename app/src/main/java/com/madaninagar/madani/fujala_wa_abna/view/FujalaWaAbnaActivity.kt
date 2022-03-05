@@ -5,9 +5,13 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.madaninagar.madani.R
-import com.madaninagar.madani.data_store.DataStore.phoneNumber
+import com.madaninagar.madani.data_store.DataStore.studentContactList
+import com.madaninagar.madani.data_store.DataStore.postCurrent
 import com.madaninagar.madani.data_store.DataStore.studentNames
-import com.madaninagar.madani.data_store.DataStore.years
+import com.madaninagar.madani.data_store.DataStore.thanaCurrent
+import com.madaninagar.madani.data_store.DataStore.villageCurrent
+import com.madaninagar.madani.data_store.DataStore.villageOriginal
+import com.madaninagar.madani.data_store.DataStore.zilaCurrent
 import com.madaninagar.madani.databinding.ActivityFujalaWaAbnaBinding
 import com.madaninagar.madani.fujala_wa_abna.model.Data
 
@@ -41,8 +45,13 @@ class FujalaWaAbnaActivity : AppCompatActivity() {
         for (i in 0..500) {
             dataList += Data(
                 studentNames[i],
-                phoneNumber[i],
-                years[i]
+                studentContactList[i],
+                villageCurrent[i],
+                villageOriginal[i],
+                postCurrent[i],
+                thanaCurrent[i],
+                zilaCurrent[i],
+                false
             )
         }
     }

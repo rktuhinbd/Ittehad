@@ -37,7 +37,7 @@ class HomeActivity : AppCompatActivity() {
 
         Log.d(TAG, "onCreate: name " + DataStore.studentNames.size)
         Log.d(TAG, "onCreate: f name " + DataStore.studentFathersName.size)
-        Log.d(TAG, "onCreate: c num " + DataStore.phoneNumber.size)
+        Log.d(TAG, "onCreate: c num " + DataStore.studentContactList.size)
         Log.d(TAG, "onCreate: vc " + DataStore.villageCurrent.size)
         Log.d(TAG, "onCreate: vo  " + DataStore.villageOriginal.size)
         Log.d(TAG, "onCreate: po  " + DataStore.postOriginal.size)

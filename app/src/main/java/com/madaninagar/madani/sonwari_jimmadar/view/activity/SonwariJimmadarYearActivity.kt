@@ -43,7 +43,7 @@ class SonwariJimmadarYearActivity : AppCompatActivity() {
         for (i in 0..500) {
             dataList += YearsData(
                 DataStore.studentNames[i],
-                DataStore.phoneNumber[i],
+                DataStore.studentContactList[i],
                 DataStore.villageCurrent[i],
                 DataStore.villageOriginal[i],
                 DataStore.postCurrent[i],

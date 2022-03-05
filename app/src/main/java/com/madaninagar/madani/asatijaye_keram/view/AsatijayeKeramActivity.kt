@@ -1,6 +1,7 @@
 package com.madaninagar.madani.asatijaye_keram.view
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -34,16 +35,11 @@ class AsatijayeKeramActivity : AppCompatActivity() {
 
     private fun initData() {
         dataList = ArrayList()
-        for (i in 0..500) {
+
+        for (i in 0..77) {
             dataList += Data(
-                DataStore.studentNames[i],
-                DataStore.phoneNumber[i],
-                DataStore.villageCurrent[i],
-                DataStore.villageOriginal[i],
-                DataStore.postCurrent[i],
-                DataStore.thanaCurrent[i],
-                DataStore.zilaCurrent[i],
-                false
+                DataStore.ostadGonNameList[i],
+                DataStore.ostadContactList[i]
             )
         }
     }
