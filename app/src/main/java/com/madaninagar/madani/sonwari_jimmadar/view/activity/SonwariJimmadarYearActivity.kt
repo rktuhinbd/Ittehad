@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.madaninagar.madani.data_store.DataStore
 import com.madaninagar.madani.databinding.ActivitySonwariJimmadarYearBinding
 import com.madaninagar.madani.sonwari_jimmadar.model.YearsData
 import com.madaninagar.madani.sonwari_jimmadar.view.adapter.YearsRecyclerAdapter
@@ -27,6 +28,7 @@ class SonwariJimmadarYearActivity : AppCompatActivity() {
         binding = ActivitySonwariJimmadarYearBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initData()
         getExtras()
         initListeners()
         initComponents()
@@ -36,10 +38,24 @@ class SonwariJimmadarYearActivity : AppCompatActivity() {
         year = intent.getStringExtra("year")!!
     }
 
+    private fun initData() {
+        dataList = ArrayList()
+        for (i in 0..500) {
+            dataList += YearsData(
+                DataStore.studentNames[i],
+                DataStore.phoneNumber[i],
+                DataStore.villageCurrent[i],
+                DataStore.villageOriginal[i],
+                DataStore.postCurrent[i],
+                DataStore.thanaCurrent[i],
+                DataStore.zilaCurrent[i],
+                false
+            )
+        }
+    }
+
     private fun initComponents() {
         binding.toolbar.tvToolbarTitle.text = year
-
-        dataList = generateDummyList()
 
         binding.rvTest.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
@@ -62,100 +78,4 @@ class SonwariJimmadarYearActivity : AppCompatActivity() {
             binding.toolbar.layoutTitle.visibility = View.VISIBLE
         }
     }
-
-    private fun generateDummyList(): ArrayList<YearsData> {
-        val dataList = ArrayList<YearsData>()
-
-        dataList += YearsData(
-            1,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
-        )
-        dataList += YearsData(
-            2,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
-        )
-        dataList += YearsData(
-            3,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
-        )
-        dataList += YearsData(
-            4,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
-        )
-        dataList += YearsData(
-            5,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
-        )
-        dataList += YearsData(
-            6,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
-        )
-        dataList += YearsData(
-            7,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
-        )
-        dataList += YearsData(
-            8,
-            "মোঃ রেজাউল করিম",
-            "01011001100",
-            "তোফাজ্জল হোসেনের বাড়ি",
-            "রহিমপুর",
-            "মুরাদনগর",
-            "মুরাদনগর",
-            "কুমিল্লা",
-            false
-        )
-
-        return dataList
-    }
-
 }

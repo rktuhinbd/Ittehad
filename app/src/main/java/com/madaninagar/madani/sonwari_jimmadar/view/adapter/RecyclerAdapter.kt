@@ -9,8 +9,10 @@ import com.madaninagar.madani.databinding.ItemYearsBinding
 class RecyclerAdapter(context: Context, dataSet: List<String>) :
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-    private var dataList: List<String> = dataSet
     private var context: Context = context
+
+    private var dataList: List<String> = dataSet
+
     var onItemClick: ((String) -> Unit)? = null
 
     class ViewHolder(val binding: ItemYearsBinding) :

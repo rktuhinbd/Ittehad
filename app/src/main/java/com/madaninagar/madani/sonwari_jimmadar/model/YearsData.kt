@@ -1,7 +1,6 @@
 package com.madaninagar.madani.sonwari_jimmadar.model
 
 data class YearsData(
-    val id: Int,
     val name: String,
     val phone: String,
     val address: String,

@@ -38,7 +38,7 @@ class FujalaWaAbnaActivity : AppCompatActivity() {
 
         dataList = ArrayList()
 
-        for (i in 0..514) {
+        for (i in 0..500) {
             dataList += Data(
                 studentNames[i],
                 phoneNumber[i],

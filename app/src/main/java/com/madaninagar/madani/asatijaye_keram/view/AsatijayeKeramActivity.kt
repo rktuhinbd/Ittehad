@@ -34,15 +34,15 @@ class AsatijayeKeramActivity : AppCompatActivity() {
 
     private fun initData() {
         dataList = ArrayList()
-        for (i in 0..514) {
+        for (i in 0..500) {
             dataList += Data(
                 DataStore.studentNames[i],
                 DataStore.phoneNumber[i],
                 DataStore.villageCurrent[i],
                 DataStore.villageOriginal[i],
-                "DataStore.postCurrent[i]",
+                DataStore.postCurrent[i],
                 DataStore.thanaCurrent[i],
-                "DataStore.zilaCurrent[i]",
+                DataStore.zilaCurrent[i],
                 false
             )
         }
