@@ -1,7 +1,6 @@
 package com.madaninagar.madani.asatijaye_keram.view
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -36,7 +35,7 @@ class AsatijayeKeramActivity : AppCompatActivity() {
     private fun initData() {
         dataList = ArrayList()
 
-        for (i in 0..77) {
+        for (i in 0 until DataStore.ostadContactList.size) {
             dataList += Data(
                 DataStore.ostadGonNameList[i],
                 DataStore.ostadContactList[i]

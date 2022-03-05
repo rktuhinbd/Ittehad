@@ -35,7 +35,7 @@ class SonwariJimmadarActivity : AppCompatActivity() {
     private fun initData() {
         yearList = ArrayList()
 
-        for (i in 0..500) {
+        for (i in 0 until DataStore.years.size) {
             yearList += DataStore.years[i]
         }
     }
